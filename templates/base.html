@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../dev/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
+</head>
+<body>
+<nav class="top-menu">
+  <div class="top-menu__inner">
+    <img class="top-menu__logo" src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png">
+    <div class="top-menu__item top-menu__item--active"><a href="#">Books</a></div>
+    <div class="top-menu__item"><a href="#">Books</a></div>
+    <div class="top-menu__item"><a href="#">Books</a></div>
+    <div class="top-menu__item"><a href="#">Books</a></div>
+    <div class="top-menu__item"><a href="#">Books</a></div>
+    <div class="top-menu__user-box">
+      <a href="#"><img class="top-menu__avatar" src="https://placehold.it/48x48"></a>
+      <a class="top-menu__counter" href="#">10</a>
+    </div>
+    <input class="top-menu__search" type="search" title="search" placeholder="search book">
+  </div>
+</nav>
+  <!--<div class="wrapper">-->
+    <!--<header class="title">-->
+        <!--<h1>Title</h1>-->
+        <!--<div class="title__breadcrumbs">-->
+            <!--<a href="#">breadcrumbs</a><a href="#">breadcrumbs</a>-->
+        <!--</div>-->
+    <!--</header>-->
+    <!--<article class="main">-->
+        <!--<div class="info-box">-->
+            <!--<div class="info-box__title info-box__title&#45;&#45;orange">ЛЕНТА НОВОСТЕЙ-->
+                <!--<span class="info-box__sub-links"><a href="/">все новости</a></span>-->
+            <!--</div>-->
+            <!--<article class="article">-->
+                <!--<header>-->
+                    <!--<aside class="article__markers">-->
+                        <!--<span class="status status&#45;&#45;news">новость</span>-->
+                    <!--</aside>-->
+                    <!--<a class="article__title">News! iguyguyguy uygfuyguyfgufguy guyguygyugugug guguygyugukgu gugyuyfguyf </a>-->
+                    <!--<div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a> о <a href="/">Gakuen Handsome The Animation fhfhghgf rth rthrhrth rthrthrthrthrthrt</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">star</i> 11/10</span></div>-->
+                <!--</header>-->
+                <!--<div class="article__body">-->
+                    <!--Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.-->
+                <!--</div>-->
+            <!--</article>-->
+            <!--<article class="article">-->
+                <!--<header>-->
+                    <!--<aside class="article__markers">-->
+                        <!--<span class="status status&#45;&#45;news">новость</span>-->
+                    <!--</aside>-->
+                    <!--<a href="/" class="article__title">News!</a>-->
+                    <!--<div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">equalizer</i> 11/10</span></div>-->
+                <!--</header>-->
+                <!--<div class="article__body">-->
+                    <!--Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.-->
+                <!--</div>-->
+            <!--</article>-->
+        <!--</div>-->
+
+        <!--<div class="info-box">-->
+            <!--<div class="info-box__title"><a href="/">Связанное</a></div>-->
+            <!--<div class="entry">-->
+                <!--<div class="entry__note">-->
+                    <!--<img class="entry__img" src="https://placehold.it/48x75">-->
+                    <!--<div class="entry__info">-->
+                        <!--<a href="/" class="entry__name">Name</a>-->
+                        <!--<span class="entry__additional">Продолжение</span><span class="entry__additional">(Новелла, 2014 г.)</span>-->
+                        <!--<ul class="add-to-list add-to-list&#45;&#45;hide add-to-list&#45;&#45;mini">-->
+                            <!--<li id="show" class="add-to-list__list-item add-to-list__list-item&#45;&#45;add add-to-list__list-item&#45;&#45;mini"><i class="material-icons md-24">playlist_add</i> Добавить в список</li>-->
+                            <!--<li class="add-to-list__list-item">Просмотрено</li>-->
+                            <!--<li class="add-to-list__list-item">Брошено</li>-->
+                            <!--<li class="add-to-list__list-item">Отложено</li>-->
+                            <!--<li class="add-to-list__list-item">Запланированно</li>-->
+                            <!--<li class="add-to-list__list-item">Пересматриваю</li>-->
+                            <!--<li class="add-to-list__list-item">Смотрю</li>-->
+                            <!--<li class="add-to-list__list-item add-to-list__list-item&#45;&#45;del">Удалить из списка</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="entry__note">-->
+                    <!--ssss-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="info-box">-->
+            <!--<div class="info-box__title">Отзывы-->
+                <!--<span class="info-box__sub-links info-box__sub-links&#45;&#45;right"><a href="/">Все отзывы (69)</a> / <a href="/">Все комментарии (1083)</a></span>-->
+            <!--</div>-->
+            <!--<div class="comment">-->
+                <!--<div class="comment__img"><img src="https://placehold.it/45x45" alt=""></div>-->
+                <!--<div class="comment__header">-->
+                    <!--<a class="comment__name" href="/">Test Name</a>-->
+                    <!--<a href=""><time class="comment__date">3 дня назад</time></a>-->
+                    <!--<div class="comment__review">-->
+                        <!--<span class="marker marker&#45;&#45;info">info</span>-->
+                        <!--<span class="marker marker&#45;&#45;success">Отзыв</span>-->
+                        <!--<span class="marker marker&#45;&#45;offtop">offtop</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="comment__text">Наконец-то досмотрела, смотрела я его довольно давно. Насчитала я 16 панцу, хотя не знаю зачем я их считала, наверное из-за того, что крутили по телеку. И тройку намеков на яой. Все как-то слишком однообразно, но интересно. Полно однообразной анимации, однообразных превращений, однообразных реплик. Но для своих годов снято годно. Были интересные моменты, были не очень. Не знаю, что насчет сейю, но они мне не очень понравились. Особенно визги, один случай на тысячу, когда мне не очень нравятся сейю и их работа. Понравилась музыка из появления Такседо и во 2 эндинге, восхищения ей особого не было, ну а в остальном как-то не запомнилась. Нарисовано все тоже вполне годно, мне понравилось, есть неплохие биши. Персонажи какие-то тупые, однообразные и неинтересные вышли. Особенно Усаги, она меня бесит, злодеи тоже тупые и не интересные. Только мужик с белой шевелюрой хоть что-то сделал для уничтожения сейлор воинов. Только кошка понравилась, которая Луна. Концовка тоже не понятная спойлер. Вроде понравилось, а вроде и нет. Во всяком случае дальше я смотреть не буду, у меня психика сдаст смотреть ее в лагающем плеере сибнете, гляну только Кристалл, когда он полностью выйдет. 6 сейлор воинов из 10-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</article>-->
+    <!--<aside class="aside aside-1">-->
+        <!--<span class="marker">not-active</span>-->
+        <!--<span class="marker marker&#45;&#45;success">success</span>-->
+        <!--<span class="marker marker&#45;&#45;info">info</span>-->
+        <!--<span class="marker marker&#45;&#45;offtop">offtop</span>-->
+        <!--<span class="marker marker&#45;&#45;warning">warning</span>-->
+        <!--<span class="marker marker&#45;&#45;danger">danger</span>-->
+
+        <!--<hr>-->
+
+        <!--<span class="status status&#45;&#45;released">released</span>-->
+        <!--<span class="status status&#45;&#45;announcement">announcement</span>-->
+        <!--<span class="status status&#45;&#45;ongoing">ongoing</span>-->
+        <!--<span class="status status&#45;&#45;news">news</span>-->
+        <!--<span class="status status&#45;&#45;ignored">ignored</span>-->
+
+        <!--<hr>-->
+
+        <!--<ul class="add-to-list add-to-list&#45;&#45;hide">-->
+            <!--<li id="show" class="add-to-list__list-item add-to-list__list-item&#45;&#45;add"><i class="material-icons md-24">playlist_add</i> <a href="#">Добавить в список</a></li>-->
+            <!--<li class="add-to-list__list-item">Просмотрено</li>-->
+            <!--<li class="add-to-list__list-item">Брошено</li>-->
+            <!--<li class="add-to-list__list-item">Отложено</li>-->
+            <!--<li class="add-to-list__list-item">Запланированно</li>-->
+            <!--<li class="add-to-list__list-item">Пересматриваю</li>-->
+            <!--<li class="add-to-list__list-item">Смотрю</li>-->
+            <!--<li class="add-to-list__list-item add-to-list__list-item&#45;&#45;del">Удалить из списка</li>-->
+        <!--</ul>-->
+
+        <!--<div class="info-box">-->
+            <!--<div class="info-box__title">Информация</div>-->
+            <!--<p><span class="muted-text">ISBN:</span> 5-699-52378-8 <a>и др.</a></p>-->
+            <!--<p><span class="muted-text">ISBN13:</span>  978-5-699-52378-8 <a>и др.</a></p>-->
+            <!--<p><span class="muted-text">ASIN:</span> B00005N5PF <a>и др.</a></p>-->
+            <!--<p><span class="muted-text">Языки:</span> Русский, English <a>и др.</a></p>-->
+            <!--<p><span class="muted-text"><abbr title="В различных изданиях и на разных языках количество страниц отличается">Страниц:</abbr></span>от 100 до 1500</p>-->
+            <!--<p><span class="muted-text">Форматы:</span> paperback, hardcover <a>и др.</a></p>-->
+            <!--<p><span class="muted-text">Дата первой публикации:</span> 01.01.1997</p>-->
+            <!--<p><span class="muted-text">Рейтинг:</span> 18+</p>-->
+        <!--</div>-->
+
+        <!--<a href="/" class="link-btn">Тест</a>-->
+        <!--<a href="/" class="link-btn link-btn&#45;&#45;big-dark">Big</a>-->
+
+    <!--</aside>-->
+    <!--<aside class="aside aside-2">-->
+        <!--<div class="user-list-mini">-->
+            <!--<ul class="user-list-mini__list">-->
+                <!--<li class="user-list-mini__title">Мой список книг</li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Запланировано</a><span class="user-list-mini__quantity">15</span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Читаю</a><span class="user-list-mini__quantity">15</span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Перечитываю</a><span class="user-list-mini__quantity">15</span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Прочитано</a><span class="user-list-mini__quantity">15</span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Отложено</a><span class="user-list-mini__quantity">15</span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Брошено</a><span class="user-list-mini__quantity">15</span></li>-->
+            <!--</ul>-->
+
+            <!--<ul class="user-list-mini__list">-->
+                <!--<li class="user-list-mini__title">Моя история <span class="user-list-mini__sub-links"><a href="/">вся</a></span></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Королевский убийца<div class="user-list-mini__additional">Читаю</div></a></li>-->
+                <!--<li class="user-list-mini__item"><a href="/">Фальшивые зеркала<div class="user-list-mini__additional">Прочитано</div></a></li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div class="avatar">-->
+            <!--<img src="https://placehold.it/160x160">-->
+            <!--<div class="avatar__action">-->
+                <!--<i class="material-icons md-18"><a href="/" data-toggle="tooltip" data-placement="top" title="Комментировать">chat_bubble</a></i>-->
+                <!--<i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Написать обзор">create</a></i>-->
+                <!--<i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="В избранное">favorite</a></i>-->
+                <!--<i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Редактировать">settings</a></i>-->
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</aside>-->
+    <!--<footer class="footer">-->
+        <!--<div style="width: 76%; float:left;">-->
+        <!--<figure class="entry-card">-->
+            <!--<a href="#">-->
+                <!--<span class="entry-card__in_list entry-card__in_list&#45;&#45;planned"></span>-->
+                <!--<img class="entry-card__cover" src="https://pp.vk.me/c633825/v633825709/2b07c/327ydj2vJ7c.jpg">-->
+                <!--<figcaption class="entry-card__caption">-->
+                    <!--<div class="entry-card__title">Test</div>-->
+                    <!--<div class="entry-card__misc">Author<span class="right">2035</span></div>-->
+                <!--</figcaption>-->
+            <!--</a>-->
+        <!--</figure>-->
+        <!--<figure class="entry-card">-->
+            <!--<span class="entry-card__in_list entry-card__in_list&#45;&#45;currently"></span>-->
+            <!--<img class="entry-card__cover" src="https://d.gr-assets.com/books/1459752962l/24859405.jpg">-->
+            <!--<figcaption class="entry-card__caption">-->
+                <!--<div class="entry-card__title">Test</div>-->
+                <!--<div class="entry-card__misc">Author<span class="right">2035</span></div>-->
+            <!--</figcaption>-->
+        <!--</figure>-->
+        <!--<figure class="entry-card">-->
+            <!--<span class="entry-card__in_list entry-card__in_list&#45;&#45;dropped"></span>-->
+            <!--<img class="entry-card__cover" src="https://d.gr-assets.com/books/1388345557l/29133.jpg">-->
+            <!--<figcaption class="entry-card__caption">-->
+                <!--<div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>-->
+                <!--<div class="entry-card__misc">Author<span class="right">2035</span></div>-->
+            <!--</figcaption>-->
+        <!--</figure>-->
+        <!--<figure class="entry-card">-->
+            <!--<span class="entry-card__in_list entry-card__in_list&#45;&#45;on-hold"></span>-->
+            <!--<img class="entry-card__cover" src="https://d.gr-assets.com/books/1222145606l/4761126.jpg">-->
+            <!--<figcaption class="entry-card__caption">-->
+                <!--<div class="entry-card__title">Test</div>-->
+                <!--<div class="entry-card__misc">Author<span class="right">2035</span></div>-->
+            <!--</figcaption>-->
+        <!--</figure>-->
+        <!--<figure class="entry-card">-->
+            <!--<span class="entry-card__in_list entry-card__in_list&#45;&#45;hidden"></span>-->
+            <!--<img class="entry-card__cover" src="https://placehold.it/154x240">-->
+            <!--<figcaption class="entry-card__caption">-->
+                <!--<div class="entry-card__title">Test</div>-->
+                <!--<div class="entry-card__misc">Author<span class="right">2035</span></div>-->
+            <!--</figcaption>-->
+        <!--</figure>-->
+        <!--</div>-->
+        <!--<div style="width: 24%;float:left;padding-left: 20px;box-sizing: border-box">-->
+            <!--<div class="info-box">-->
+                <!--<div class="info-box__title">Фильтры<span class="info-box__sub-links info-box__sub-links&#45;&#45;choice-btn"><i class="material-icons md-18"><a href="#">done</a></i></span></div>-->
+                <!--<ul class="collection-filters">-->
+                    <!--<li class="collection-filters__item"><input type="checkbox" title="">test</li>-->
+                    <!--<li class="collection-filters__item collection-filters__item&#45;&#45;selected"><input type="checkbox" title="">test <i class="material-icons md-18 collection-filters__item__item-add">add</i></li>-->
+                    <!--<li class="collection-filters__item"><input type="checkbox" title="">test</li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</footer>-->
+<!--</div>-->
+
+<!--<div class="to_top"></div>-->
+<div class="comment-notifer">
+  <div class="comment-notifer__counter">999</div>
+</div>
+<div class="container">
+
+<!--book page-->
+  <header class="title">
+    <h1>Title</h1>
+    <div class="title__breadcrumbs">
+      <a href="#">breadcrumbs</a><a href="#">breadcrumbs</a>
+    </div>
+  </header>
+  <div class="row">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger"></label>
+    <div class="content">
+      <div class="row">
+        <div class="image">
+          <div class="cover">
+            <img class="cover__img" src="https://d.gr-assets.com/books/1399584431l/45112.jpg">
+            <div class="cover__action">
+              <i class="material-icons md-18"><a href="/" data-toggle="tooltip" data-placement="top" title="Комментировать">chat_bubble</a></i>
+              <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Написать обзор">create</a></i>
+              <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="В избранное">favorite</a></i>
+              <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Редактировать">settings</a></i>
+            </div>
+          </div>
+          <div class="dropdown">
+            <i class="material-icons md-24">playlist_add</i> <a href="#">Добавить в список</a>
+            <a class="dropdown__toggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+            <ul class="dropdown__menu" aria-labelledby="drop">
+              <li><a href="#">Прочитано</a></li>
+              <li><a href="#">Брошено</a></li>
+              <li><a href="#">Отложено</a></li>
+              <li><a href="#">Запланированно</a></li>
+              <li><a href="#">Перечитываю</a></li>
+              <li><a href="#">Читаю</a></li>
+              <li><a href="#">Удалить из списка</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="about">
+          <div class="row">
+            <div class="about__left">
+              <div class="info-box">
+                <div class="info-box__title">Информация</div>
+                <p><span class="muted-text">ISBN:</span> 5-699-52378-8 <a>и др.</a></p>
+                <p><span class="muted-text">ISBN13:</span>  978-5-699-52378-8 <a>и др.</a></p>
+                <p><span class="muted-text">ASIN:</span> B00005N5PF <a>и др.</a></p>
+                <p><span class="muted-text">Языки:</span> Русский, English <a>и др.</a></p>
+                <p><span class="muted-text"><abbr title="В различных изданиях и на разных языках количество страниц отличается">Страниц:</abbr></span>от 100 до 1500</p>
+                <p><span class="muted-text">Форматы:</span> paperback, hardcover <a>и др.</a></p>
+                <p><span class="muted-text">Дата первой публикации:</span> 01.01.1997</p>
+                <p><span class="muted-text">Рейтинг:</span> 18+</p>
+              </div>
+            </div>
+            <div class="about__right">
+              <div class="info-box">
+                <div class="info-box__title">Рейтинг</div>
+                <p><span class="muted-text">Рейтинг:</span> 18+</p>
+              </div>
+              <div class="info-box">
+                <div class="info-box__title">Жанры</div>
+                <p>Мистика, Экшен, Фантастика</p>
+              </div>
+            </div>
+            <div class="info-box">
+              <div class="info-box__title">Описание</div>
+              <p>brigantium Heu, vox!Primus, fortis paluss virtualiter desiderium de talis, camerarius gluten.Bassus byssuss ducunt ad repressor.
+                As i have met you, so you must hear one another. After breaking the white breads, marinate doughnut, truffels and milk with it in a bowl. Damn yer doubloons, feed the scabbard.
+                Shields up. Why does the nanomachine yell? I disrupt this ionic cannon, it's called dead shield.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="relations">
+          <div class="info-box">
+            <div class="info-box__title">Связанное
+              <span class="info-box__sub-links info-box__sub-links--right"><a href="/">Напрямую</a><a href="/">Хронология</a></span>
+            </div>
+            <div class="entry">
+              <img class="entry__img" src="https://placehold.it/48x75">
+              <div class="entry__info">
+                <a href="/" class="entry__name">Name</a>
+                <span class="entry__additional">Продолжение</span><span class="entry__additional">(Новелла, 2014 г.)</span>
+                <br>
+                <div class="dropdown dropdown--mini dropdown--on-hold">
+                  <i class="material-icons md-24">playlist_add</i> <a href="#">Добавить в список</a>
+                  <a class="dropdown__toggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                  <ul class="dropdown__menu dropdown__menu--mini" aria-labelledby="drop">
+                    <li><a href="#">Прочитано</a></li>
+                    <li><a href="#">Брошено</a></li>
+                    <li><a href="#">Отложено</a></li>
+                    <li><a href="#">Запланированно</a></li>
+                    <li><a href="#">Перечитываю</a></li>
+                    <li><a href="#">Читаю</a></li>
+                    <li><a href="#">Удалить из списка</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="entry">
+                ssss
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="authors">
+          <div class="info-box">
+            <div class="info-box__title"><a href="/">Авторы</a></div>
+            <div class="entry">
+              <img class="entry__img" src="https://placehold.it/48x75">
+              <div class="entry__info">
+                <a href="/" class="entry__name">Name</a>
+                <span class="entry__additional">Автор</span>
+              </div>
+            </div>
+            <div class="entry">
+              <img class="entry__img" src="https://placehold.it/48x75">
+              <div class="entry__info">
+                <a href="/" class="entry__name">Name</a>
+                <span class="entry__additional">Автор</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!--end row-->
+      <div class="info-box">
+        <div class="info-box__title">Отзывы
+          <span class="info-box__sub-links info-box__sub-links--right"><a href="/">Все отзывы (69)</a><a href="/">Все комментарии (1083)</a></span>
+        </div>
+        <div class="comment" id="comment-1" data-read="false"> <!--TODO-->
+          <div class="comment__img"><img src="https://placehold.it/45x45" alt=""></div>
+          <div class="comment__header">
+            <a class="comment__name" href="/">Test Name</a>
+            <a href=""><time class="comment__date">3 дня назад</time></a>
+            <div class="comment__review">
+              <span class="marker marker--info">новый</span>
+              <span class="marker marker--success">Отзыв</span>
+              <span class="marker marker--offtop">offtop</span>
+            </div>
+          </div>
+          <div class="comment__text">Наконец-то досмотрела, смотрела я его довольно давно. Насчитала я 16 панцу, хотя не знаю зачем я их считала, наверное из-за того, что крутили по телеку. И тройку намеков на яой. Все как-то слишком однообразно, но интересно. Полно однообразной анимации, однообразных превращений, однообразных реплик. Но для своих годов снято годно. Были интересные моменты, были не очень. Не знаю, что насчет сейю, но они мне не очень понравились. Особенно визги, один случай на тысячу, когда мне не очень нравятся сейю и их работа. Понравилась музыка из появления Такседо и во 2 эндинге, восхищения ей особого не было, ну а в остальном как-то не запомнилась. Нарисовано все тоже вполне годно, мне понравилось, есть неплохие биши. Персонажи какие-то тупые, однообразные и неинтересные вышли. Особенно Усаги, она меня бесит, злодеи тоже тупые и не интересные. Только мужик с белой шевелюрой хоть что-то сделал для уничтожения сейлор воинов. Только кошка понравилась, которая Луна. Концовка тоже не понятная спойлер. Вроде понравилось, а вроде и нет. Во всяком случае дальше я смотреть не буду, у меня психика сдаст смотреть ее в лагающем плеере сибнете, гляну только Кристалл, когда он полностью выйдет. 6 сейлор воинов из 10
+          </div>
+        </div>
+        <div class="comment" id="comment-2" data-read="true">
+          <div class="comment__img"><img src="https://placehold.it/45x45" alt=""></div>
+          <div class="comment__header">
+            <a class="comment__name" href="/">Test Name</a>
+            <a href=""><time class="comment__date">3 дня назад</time></a>
+            <div class="comment__review">
+              <span class="marker marker--info">info</span>
+              <span class="marker marker--success">Отзыв</span>
+              <span class="marker marker--offtop">offtop</span>
+            </div>
+          </div>
+          <div class="comment__text">Наконец-то досмотрела, смотрела я его довольно давно. Насчитала я 16 панцу, хотя не знаю зачем я их считала, наверное из-за того, что крутили по телеку. И тройку намеков на яой. Все как-то слишком однообразно, но интересно. Полно однообразной анимации, однообразных превращений, однообразных реплик. Но для своих годов снято годно. Были интересные моменты, были не очень. Не знаю, что насчет сейю, но они мне не очень понравились. Особенно визги, один случай на тысячу, когда мне не очень нравятся сейю и их работа. Понравилась музыка из появления Такседо и во 2 эндинге, восхищения ей особого не было, ну а в остальном как-то не запомнилась. Нарисовано все тоже вполне годно, мне понравилось, есть неплохие биши. Персонажи какие-то тупые, однообразные и неинтересные вышли. Особенно Усаги, она меня бесит, злодеи тоже тупые и не интересные. Только мужик с белой шевелюрой хоть что-то сделал для уничтожения сейлор воинов. Только кошка понравилась, которая Луна. Концовка тоже не понятная спойлер. Вроде понравилось, а вроде и нет. Во всяком случае дальше я смотреть не буду, у меня психика сдаст смотреть ее в лагающем плеере сибнете, гляну только Кристалл, когда он полностью выйдет. 6 сейлор воинов из 10
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="side-menu">
+      <div class="info-box">
+        <div class="info-box__title">Информация</div>
+        <p><span class="muted-text">ISBN:</span> 5-699-52378-8 <a>и др.</a></p>
+        <p><span class="muted-text">ISBN13:</span>  978-5-699-52378-8 <a>и др.</a></p>
+        <p><span class="muted-text">ASIN:</span> B00005N5PF <a>и др.</a></p>
+        <p><span class="muted-text">Языки:</span> Русский, English <a>и др.</a></p>
+        <p><span class="muted-text"><abbr title="В различных изданиях и на разных языках количество страниц отличается">Страниц:</abbr></span>от 100 до 1500</p>
+        <p><span class="muted-text">Форматы:</span> paperback, hardcover <a>и др.</a></p>
+        <p><span class="muted-text">Дата первой публикации:</span> 01.01.1997</p>
+        <p><span class="muted-text">Рейтинг:</span> 18+</p>
+      </div>
+    </aside>
+  </div>
+<!--end book page-->
+<hr>
+  <!--catalog page-->
+  <div class="row">
+    <div class="content">
+      <div class="row">
+        <figure class="entry-card">
+          <a href="#">
+            <span class="entry-card__in_list entry-card__in_list--planned"></span>
+            <img class="entry-card__cover entry-card__cover--planned" src="https://pp.vk.me/c633825/v633825709/2b07c/327ydj2vJ7c.jpg">
+            <figcaption class="entry-card__caption">
+              <div class="entry-card__title">Test</div>
+              <div class="entry-card__misc">Author<span class="right">2035</span></div>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="entry-card">
+          <span class="entry-card__in_list entry-card__in_list--currently"></span>
+          <img class="entry-card__cover entry-card__cover--currently" src="https://d.gr-assets.com/books/1459752962l/24859405.jpg">
+          <figcaption class="entry-card__caption">
+            <div class="entry-card__title">Test</div>
+            <div class="entry-card__misc">Author<span class="right">2035</span></div>
+          </figcaption>
+        </figure>
+        <figure class="entry-card">
+          <span class="entry-card__in_list entry-card__in_list--dropped"></span>
+          <img class="entry-card__cover entry-card__cover--dropped" src="https://d.gr-assets.com/books/1388345557l/29133.jpg">
+          <figcaption class="entry-card__caption">
+            <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+            <div class="entry-card__misc">Author<span class="right">2035</span></div>
+          </figcaption>
+        </figure>
+        <figure class="entry-card">
+          <span class="entry-card__in_list entry-card__in_list--on-hold"></span>
+          <img class="entry-card__cover entry-card__cover--on-hold" src="https://d.gr-assets.com/books/1222145606l/4761126.jpg">
+          <figcaption class="entry-card__caption">
+            <div class="entry-card__title">Test</div>
+            <div class="entry-card__misc">Author<span class="right">2035</span></div>
+          </figcaption>
+        </figure>
+        <figure class="entry-card">
+          <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+          <img class="entry-card__cover" src="https://placehold.it/154x240">
+          <figcaption class="entry-card__caption">
+            <div class="entry-card__title">Test</div>
+            <div class="entry-card__misc">Author<span class="right">2035</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+    <aside class="side-menu">
+      <div class="info-box">
+        <div class="info-box__title">Фильтры<span class="info-box__sub-links info-box__sub-links--choice-btn"><i class="material-icons md-18"><a href="#">done</a></i></span></div>
+        <ul class="collection-filters">
+          <li class="collection-filters__item"><input type="checkbox" title="">test</li>
+          <li class="collection-filters__item collection-filters__item--selected"><input type="checkbox" title="">test <i class="material-icons md-18 collection-filters__item__item-add">add</i></li>
+          <li class="collection-filters__item"><input type="checkbox" title="">test</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <!--end catalog page-->
+<hr>
+  <!--main page-->
+
+  <div class="info-box">
+    <div class="info-box__title info-box__title--big">Популярное
+    </div>
+    <div class="info-box__flex-body info-box__flex-body--no-wrap">
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+      <figure class="entry-card entry-card--ongoings">
+        <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+        <img class="entry-card__cover" src="https://placehold.it/154x240">
+        <figcaption class="entry-card__caption">
+          <div class="entry-card__title" title="test">sdhduihguihgui uisdhgiuhgiusdhig sdjhguisdhguidhguisdhuighsduihf dsuhfsduihguisdgd</div>
+          <div class="entry-card__misc">Author<span class="right">2035</span></div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="l-header">
+    <div class="l-header__left">
+      <div class="user-list-mini">
+        <ul class="user-list-mini__list">
+          <li class="user-list-mini__title">Мой список книг</li>
+          <li class="user-list-mini__item"><a href="/">Запланировано</a><span class="user-list-mini__quantity">15</span></li>
+          <li class="user-list-mini__item"><a href="/">Читаю</a><span class="user-list-mini__quantity">15</span></li>
+          <li class="user-list-mini__item"><a href="/">Перечитываю</a><span class="user-list-mini__quantity">15</span></li>
+          <li class="user-list-mini__item"><a href="/">Прочитано</a><span class="user-list-mini__quantity">15</span></li>
+          <li class="user-list-mini__item"><a href="/">Отложено</a><span class="user-list-mini__quantity">15</span></li>
+          <li class="user-list-mini__item"><a href="/">Брошено</a><span class="user-list-mini__quantity">15</span></li>
+        </ul>
+
+        <ul class="user-list-mini__list">
+          <li class="user-list-mini__title">Моя история <span class="user-list-mini__sub-links"><a href="/">вся</a></span></li>
+          <li class="user-list-mini__item"><a href="/">Королевский убийца<div class="user-list-mini__additional">Читаю</div></a></li>
+          <li class="user-list-mini__item"><a href="/">Фальшивые зеркала<div class="user-list-mini__additional">Прочитано</div></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="l-header__center">
+      <div class="info-box">
+        <div class="info-box__title info-box__title--magenta info-box__title--big">Рецензии
+          <span class="info-box__sub-links"><a href="/">все рецензии</a></span>
+        </div>
+        <article class="article">
+          <header>
+            <aside class="article__markers">
+              <span class="status status--announcement">рецензия</span>
+            </aside>
+            <a class="article__title">News! iguyguyguy uygfuyguyfgufguy guyguygyugugug guguygyugukgu gugyuyfguyf </a>
+            <div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">star</i> 11/10</span></div>
+          </header>
+          <div class="article__body">
+            Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="l-header__right">
+      <a href="/" class="link-btn link-btn--dark link-btn--big">Форум</a>
+      <div class="info-box">
+        <div class="info-box__title info-box__title--green info-box__title--big">Опросы
+          <span class="info-box__sub-links"><a href="/">все опросы</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="l-news">
+      <div class="info-box">
+        <div class="info-box__title info-box__title--orange info-box__title--big">ЛЕНТА НОВОСТЕЙ
+          <span class="info-box__sub-links"><a href="/">все новости</a></span>
+        </div>
+        <article class="article">
+          <header>
+            <aside class="article__markers">
+              <span class="status status--news">новость</span>
+            </aside>
+            <a class="article__title">Chinese/Japanese компания "Emon Animation Company" инвестирует в аниме студию Artland</a>
+            <div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a> о <a href="/">Gakuen Handsome The Animation rggedgedrgd drgdgzggsggrt fhfhghgf rth rthrhrth rthrthrthrthrthrt</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">star</i> 11/10</span></div>
+          </header>
+          <div class="article__body">
+            Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.
+          </div>
+        </article>
+        <article class="article">
+          <header>
+            <aside class="article__markers">
+              <span class="status status--news">новость</span>
+            </aside>
+            <a href="/" class="article__title">News!</a>
+            <div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">equalizer</i> 11/10</span></div>
+          </header>
+          <div class="article__body">
+            Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.
+          </div>
+        </article>
+      </div>
+    </div>
+    <aside class="l-generated-news">
+      <div class="info-box">
+        <div class="info-box__title info-box__title--yellow info-box__title--big">ОБНОВЛЕНИЯ
+          <span class="info-box__sub-links"><a href="/">все обновления</a></span>
+        </div>
+        <article class="article">
+          <header>
+            <aside class="article__markers">
+              <span class="status status--ongoing">онгоинг</span>
+            </aside>
+            <a class="article__title article__title--auto-generated">Sansha Sanyou Specials</a><time>день назад</time>
+          </header>
+          <div class="article__body">
+            Dozens of deaths will be lost in ionic cannons like advices in peaces Countless mermaids eat reliable, devastated species.
+          </div>
+        </article>
+      </div>
+    </aside>
+  </div>
+  <!--end main page-->
+<hr>
+  <!--profile page-->
+  <div class="l-profile-head">
+    <div class="l-profile-head__info">
+      <div class="avatar">
+        <img src="https://placehold.it/160x160">
+        <div class="profile-action profile-action--md">
+          <i class="material-icons md-18"><a href="/" data-toggle="tooltip" data-placement="top" title="Комментировать">chat_bubble</a></i>
+          <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Написать обзор">create</a></i>
+          <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="В избранное">favorite</a></i>
+          <i class="material-icons md-18"><a data-toggle="tooltip" data-placement="top" title="Редактировать">settings</a></i>
+        </div>
+      </div>
+      <div class="title">
+        <h1>Nickname</h1>
+        <div class="title__breadcrumbs title__breadcrumbs--wrap">
+          <span>Владимир Войтенко</span>
+          <span>муж</span>
+          <span>22 года</span>
+          <span>Красноярск</span>
+          <span>vk.com</span>
+          <span>на сайте с <abbr title="3 февраля 2013г.">2013 г.</abbr></span>
+        </div>
+      </div>
+      <div class="profile-action profile-action--sm">
+        <a href="#">Написать</a>
+        <a href="#">Удалить из друзей</a>
+        <a href="#">Добавить в игнор</a>
+        <a href="#">История банов</a>
+      </div>
+      <div class="profile-info profile-info--md">
+        <a class="profile-info__title" href="#">Список книг</a>
+        <a class="profile-info__compatibility" href="#">Похожие пользователи</a>
+        <div class="progress">
+          <div class="progress__first" style="width:33.3%">33</div>
+          <div class="progress__second" style="width:33.3%">33</div>
+          <div class="progress__third" style="width:33.3%">33</div>
+        </div>
+        <div class="profile-info__lists_title">
+          <a href="#">Запланировано (999)</a>
+          <a href="#">Читаю (999)</a>
+          <a href="#">Прочитано (999)</a>
+          <a href="#">Отложено (999)</a>
+          <a href="#">Брошено (999)</a>
+        </div>
+        <div class="profile-info__additionals">
+          <b>Активность: </b><a href="#">5 отзывов</a>
+          <a href="#">908 правок контента</a>
+          <a href="#">273477 правок видео</a>
+          <a href="#">562 комментария</a>
+        </div>
+      </div>
+    </div>
+    <div class="l-profile-head__history">
+      <div class="info-box">
+        <div class="info-box__title">История</div>
+        <div class="info-box__body">
+          <div class="entry entry--history">
+            <img class="entry__img entry__img--profile" src="https://placehold.it/48x75">
+            <div class="entry__info">
+              <a href="/" class="entry__name">Bishoujo Senshi Sailor Moon</a>
+              <span class="entry__misc">Прочитано</span>
+              <time class="small-text">31 день назад</time>
+            </div>
+          </div>
+          <div class="entry entry--history">
+            <img class="entry__img entry__img--profile" src="https://placehold.it/48x75">
+            <div class="entry__info">
+              <a href="/" class="entry__name">Bishoujo Senshi Sailor Moon</a>
+              <span class="entry__misc">Прочитано</span>
+              <time class="small-text">31 день назад</time>
+            </div>
+          </div>
+          <div class="entry entry--history">
+            <img class="entry__img entry__img--profile" src="https://placehold.it/48x75">
+            <div class="entry__info">
+              <a href="/" class="entry__name">Bishoujo Senshi Sailor Moon</a>
+              <span class="entry__misc">Прочитано</span>
+              <time class="small-text">31 день назад</time>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="profile-info profile-info--sm">
+      <a class="profile-info__title" href="#">Список книг</a>
+      <a class="profile-info__compatibility" href="#">Похожие пользователи</a>
+      <div class="progress">
+        <div class="progress__first" style="width:33.3%">33</div>
+        <div class="progress__second" style="width:33.3%">33</div>
+        <div class="progress__third" style="width:33.3%">33</div>
+      </div>
+      <div class="profile-info__lists_title">
+        <a href="#">Запланировано (999)</a>
+        <a href="#">Читаю (999)</a>
+        <a href="#">Прочитано (999)</a>
+        <a href="#">Отложено (999)</a>
+        <a href="#">Брошено (999)</a>
+      </div>
+      <div class="profile-info__additionals">
+        <b>Активность: </b><a href="#">5 отзывов</a>
+        <a href="#">908 правок контента</a>
+        <a href="#">273477 правок видео</a>
+        <a href="#">562 комментария</a>
+      </div>
+    </div>
+  </div>
+  <div class="l-profile-content">
+    <div class="l-profile-content__left">
+      <div class="info-box">
+        <div class="info-box__title">Избранное</div>
+        <div class="info-box__flex-body info-box__flex-body--no-wrap">
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+          <figure class="entry-card entry-card--favorites">
+            <span class="entry-card__in_list entry-card__in_list--hidden"></span>
+            <img class="entry-card__cover" src="https://placehold.it/154x240">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="l-profile-content__right">
+      <div class="row">
+        <div class="l-profile-content__friends">
+          <div class="info-box">
+            <div class="info-box__title">Друзья</div>
+            <div class="info-box__body">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+              <img class="info-box__avatar32" src="https://placehold.it/32x32">
+            </div>
+          </div>
+        </div>
+        <div class="l-profile-content__clubs">
+          <div class="info-box">
+            <div class="info-box__title">Клубы</div>
+            <div class="info-box__body">
+              <img class="info-box__avatar48" src="https://placehold.it/64x64">
+              <img class="info-box__avatar48" src="https://placehold.it/64x64">
+              <img class="info-box__avatar48" src="https://placehold.it/64x64">
+              <img class="info-box__avatar48" src="https://placehold.it/64x64">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="info-box">
+    <div class="info-box__title">Обо мне</div>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dolorum ipsa minus odit officia repudiandae ut vel. Dolores ea fugit id in, ipsum itaque laboriosam maiores molestias nemo non nostrum odio odit perspiciatis qui quos ratione, repellat sit vero! Asperiores, dolor dolores ducimus expedita facilis ipsa laborum nam sit?</p>
+  <div class="info-box">
+    <div class="info-box__title">Лента</div>
+    <div class="comment" id="comment-3" data-read="false"> <!--TODO-->
+      <div class="comment__img"><img src="https://placehold.it/45x45" alt=""></div>
+      <div class="comment__header">
+        <a class="comment__name" href="/">Test Name</a>
+        <a href=""><time class="comment__date">3 дня назад</time></a>
+        <div class="comment__review">
+          <span class="marker marker--info">новый</span>
+          <span class="marker marker--success">Отзыв</span>
+          <span class="marker marker--offtop">offtop</span>
+        </div>
+      </div>
+      <div class="comment__text">Наконец-то досмотрела, смотрела я его довольно давно. Насчитала я 16 панцу, хотя не знаю зачем я их считала, наверное из-за того, что крутили по телеку. И тройку намеков на яой. Все как-то слишком однообразно, но интересно. Полно однообразной анимации, однообразных превращений, однообразных реплик. Но для своих годов снято годно. Были интересные моменты, были не очень. Не знаю, что насчет сейю, но они мне не очень понравились. Особенно визги, один случай на тысячу, когда мне не очень нравятся сейю и их работа. Понравилась музыка из появления Такседо и во 2 эндинге, восхищения ей особого не было, ну а в остальном как-то не запомнилась. Нарисовано все тоже вполне годно, мне понравилось, есть неплохие биши. Персонажи какие-то тупые, однообразные и неинтересные вышли. Особенно Усаги, она меня бесит, злодеи тоже тупые и не интересные. Только мужик с белой шевелюрой хоть что-то сделал для уничтожения сейлор воинов. Только кошка понравилась, которая Луна. Концовка тоже не понятная спойлер. Вроде понравилось, а вроде и нет. Во всяком случае дальше я смотреть не буду, у меня психика сдаст смотреть ее в лагающем плеере сибнете, гляну только Кристалл, когда он полностью выйдет. 6 сейлор воинов из 10
+      </div>
+    </div>
+  </div>
+  <!--end profile page-->
+</div><!-- end container-->
+
+<footer>
+  <a href="#">Соглашение</a><a href="#">Конфиденциальность</a><a href="#">Карта сайта</a>
+  <span class="copyright">© mybooklist.org 2016</span>
+</footer>
+
+
+<script>
+  $(document).ready(function(){
+    if ($("#show").hasClass("add-to-list__list-item--add")) {
+      $(".add-to-list__list-item--del").css("display", "none");
+    }
+    else {
+      var activeItem = $(".add-to-list__list-item--active").text();
+      $("#show").text(activeItem);
+    }
+    $(".add-to-list__list-item--active").css( "display", "none" );
+  });
+
+  $(".add-to-list__list-item").after().on("click", function(){  //FIXME bug here
+    if ( $(".add-to-list").hasClass("add-to-list--hide") ) {
+      $(".add-to-list").removeClass("add-to-list--hide");
+    }
+    else {
+      $(".add-to-list").addClass("add-to-list--hide");
+    }
+  });
+
+
+$(".add-to-list__list-item:not(:first-child)").on("click", function(){
+
+  var activeItem = $(".add-to-list__list-item--active");
+  var newActiveItem = $(this).text();
+
+  if ( $(this).hasClass("add-to-list__list-item--del") ) {
+    $("#show").addClass("add-to-list__list-item--add");
+    $("#show").text("Добавить в список");
+    $(activeItem).removeClass("add-to-list__list-item--active");
+    $(activeItem).fadeIn();
+    $(".add-to-list__list-item--del").css("display", "none");
+    $(".add-to-list").addClass("add-to-list--hide");
+  }
+  else {
+    if (activeItem !== "") {
+      $(activeItem).removeClass("add-to-list__list-item--active");
+      $(activeItem).fadeIn();
+    }
+    $(this).addClass("add-to-list__list-item--active");
+    $(this).css( "display", "none" );
+    $("#show").text(newActiveItem);
+    $(".add-to-list__list-item--del").fadeIn();
+    $(".add-to-list").addClass("add-to-list--hide");
+  }
+});
+
+</script>
+
+    <script> //comments
+        var dataList = $(".comment").map(function() {
+            return $(this).attr("id");
+        }).get();
+
+        console.log(dataList.length);
+
+
+//        var unread = true;
+//
+//        var dataList2 = $(".comment").map(function() {
+//            return $(this).attr("data-read");
+//        }).get();
+//        console.log(dataList2);
+
+        $.fn.scrollBottom = function() {
+            return $(document).height() - this.scrollTop() - this.height();
+        };
+
+        $(window).scroll (function () {
+            if ($(this).scrollBottom() > 50) {
+                $('.comment-notifer').fadeIn();
+            } else {
+                $('.comment-notifer').fadeOut();
+            }
+        });
+
+        $.fn.scrollView = function () {
+            return this.each(function () {
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top
+                }, 400);
+            });
+        };
+
+        $('.comment-notifer').click(function(){
+//            $('body,html').animate({
+//                scrollTop: $(window).scrollBottom()
+//            }, "slow");
+            $().data(unread).scrollView();
+            return false;
+        });
+    </script>
+
+<script>
+$(document).ready(function() {
+
+    $(window).scroll (function () {
+    if ($ (this).scrollTop() > 50) {
+    $ ('.to_top').fadeIn();
+    } else {
+    $ ('.to_top').fadeOut();
+    }
+    });
+
+    $('.to_top').click(function(){
+        $('body,html').animate({
+            scrollTop: 0
+            }, 100);
+        return false;
+    });
+
+$('.to_top:before').hover(function() {
+    $(this).animate({
+        'opacity':'0.3'
+        }).css({'background-color':'#E1E7ED','width':'40px','content':'.'});
+    }, function(){
+            $(this).animate({
+                'opacity':'0.3'
+            }).css({'background':'none'});
+    });
+
+});
+</script>
+
+</body>
+</html>

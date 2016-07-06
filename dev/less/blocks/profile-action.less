@@ -1,0 +1,22 @@
+.profile-action {
+  display: flex;
+  margin-top: 5px;
+  text-align: center;
+  justify-content: space-around;
+
+  >a {
+    display: block;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+
+  &--sm {
+    .hidden-up(md);
+  }
+
+  &--md {
+    .hidden-down(sm);
+  }
+}

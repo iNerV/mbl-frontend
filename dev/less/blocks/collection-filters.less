@@ -1,0 +1,39 @@
+.collection-filters {
+  line-height: 1.65;
+  list-style: none outside none;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    .text-overflow();
+    background-color: transparent;
+    color: #555555;
+    cursor: pointer;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 12px;
+    //line-height: 20.34px;
+    margin: 1px 0 2px;
+    padding: 1px 3px 0 3px;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+
+    &--selected {
+      background-color: #e5e5e5;
+      color: #123;
+    }
+
+    &__item-add{
+      font-weight: bold;
+      float: right;
+    }
+
+    input {
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

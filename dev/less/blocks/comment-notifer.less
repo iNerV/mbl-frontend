@@ -1,0 +1,43 @@
+.comment-notifer {
+  .hidden-down(sm);
+  transition: background-color 300ms;
+  background: #fff;
+  color: white;
+  cursor: pointer;
+  line-height: 48px;
+  margin: 8px;
+  min-width: 50px;
+  padding: 0 4px;
+  position: fixed;
+  text-align: center;
+  right: 10px;
+  bottom: 10px;
+  z-index: 10;
+  border-radius: 30px;
+  border: 1px solid #acacac;
+  height: 50px;
+  width: 50px;
+
+  &__counter {
+    position: absolute;
+    background-color: #1d78b7;
+    color: #fff;
+    top: -18px;
+    left: 20%;
+    //margin: 0 10%;
+    border-radius: 30px;
+    border: 1px solid #acacac;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+  }
+
+  &:before {
+    font-family: 'Material Icons';
+    color: #acacac;
+    content: "\E313";
+    vertical-align: middle;
+    text-align: center;
+    font-size: 3rem;
+  }
+}

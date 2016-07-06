@@ -1,0 +1,16 @@
+.link(@color: @link-color, @hover-color: @link-hover-color) {
+  &:link {
+    color: @color;
+  }
+  &:visited {
+    color: @color;
+  }
+  &:hover {
+    text-decoration: underline;
+    color: @hover-color;
+  }
+  &:active {
+    text-decoration: underline;
+    color: @hover-color;
+  }
+}

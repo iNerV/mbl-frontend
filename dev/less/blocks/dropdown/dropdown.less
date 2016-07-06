@@ -1,0 +1,196 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  border: 1px solid @blue--light;
+  border-left-width: 5px;
+  width: 100%;
+  background-color: @blue--lighter;
+  color: @brand-primary;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  line-height: 2.308;
+  //max-width: 227px;
+  padding: 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+
+  &--mini {
+    max-width: 180px;
+    line-height: 1.65;
+    font-size: 12px;
+    padding: 0 4px;
+    border-left-width: 4px;
+
+    &--open & {
+      &__menu {
+      margin-left: -4px !important;
+      width: ~"calc(100% + 5px)";
+      }
+    }
+  }
+
+  &--open & {
+    &__menu {
+      display: block;
+      margin-left: -5px;
+      z-index: 10; // FIXME
+      visibility: visible;
+      opacity: 1;
+      width: ~"calc(100% + 6px)";
+    }
+  }
+
+   //Быстрое добавление треугольника для всех элементов-переключателей выпадающих блоков
+   &__toggler {
+     float: right;
+     &:after {
+       content: '';
+       display: inline-block;
+       vertical-align: middle;
+       //margin-left: 0.3em;
+       width: 0;
+       height: 0;
+       border-style: solid;
+       border-width: 0.6em 0.4em 0;
+       border-color: currentColor transparent transparent transparent;
+     }
+   }
+
+  &__menu {
+    max-width: 90vw;
+    width: 1px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: -1;
+    background-color: @blue--lighter;
+    color: @brand-primary;
+    margin: 0;
+    border: 1px solid @blue--light;
+    border-left-width: 5px;
+    //border-radius: 20%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    font-size: 1rem;
+    font-weight: normal;
+
+    &--mini {
+      margin-left: -4px!important;
+      border-left-width: 4px !important;
+    }
+
+    &--up {
+      top: auto;
+      bottom: 100%;
+    }
+
+    &--right {
+      left: auto;
+      right: 0;
+    }
+
+    div& {
+      min-width: 26rem;
+    }
+
+    ul& {
+      //min-width: 16rem;
+      list-style: none;
+      padding: 0.3em 0;
+
+      > li {
+        &:not(:last-child) {
+          border-bottom: 1px solid @blue--light;
+        }
+        & > a {
+          display: block;
+          white-space: nowrap;
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0 1em;
+          color: @brand-primary;
+          text-decoration: none;
+
+          &:hover, &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu-inner {
+    padding: 1em;
+  }
+
+  &--currently, &--currently > ul, &--currently > ul > li {
+    background-color: @green--lightest !important;
+    border-color: @green--light !important;
+    color: @green--dark;
+
+    a {
+      color: @green--dark;
+      text-decoration: none;
+      cursor: pointer;
+      &:link{color: @green--dark}
+      &:visited{color: @green--dark}
+      &:hover{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+
+      }
+      &:active{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+      }
+    }
+  }
+
+  &--on-hold, &--on-hold > ul, &--on-hold > ul > li {
+    background-color: @orange--lightest !important;
+    border-color: @orange--light !important;
+    color: @orange;
+
+    a {
+      color: @orange;
+      text-decoration: none;
+      cursor: pointer;
+      &:link{color: @orange}
+      &:visited{color: @orange}
+      &:hover{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+
+      }
+      &:active{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+      }
+    }
+  }
+
+  &--dropped, &--dropped > ul, &--dropped > ul > li {
+    background-color: @red--lightest !important;
+    border-color: @red--light !important;
+    color: @red;
+
+    a {
+      color: @red;
+      text-decoration: none;
+      cursor: pointer;
+      &:link{color: @red}
+      &:visited{color: @red}
+      &:hover{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+
+      }
+      &:active{
+        color: @link-hover-color;
+        text-decoration: @link-hover-decoration;
+      }
+    }
+  }
+}
