@@ -1,0 +1,348 @@
+.top-menu {
+  .clearfix();
+  border-bottom: 1px solid #444;
+  position: relative;
+  background-color: #333;
+  //height: 33px;
+  z-index: 10;
+
+  &__inner {
+    // TODO разобраться почему .container() ломает верстку, хотя стили все те же, что ниже.
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+
+    @media (min-width: @screen-sm) {
+      width: @container-sm;
+    }
+
+    @media (min-width: @screen-md) {
+      width: @container-md;
+    }
+
+    @media (min-width: @screen-lg) {
+      width: @container-lg;
+    }
+
+    @media (min-width: @screen-xl) {
+      width: @container-xl;
+    }
+
+    @media (min-width: @screen-xxl) {
+      width: @container-xxl;
+    }
+  }
+
+  &__logo {
+    padding-left: (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+    float: left;
+    height: 33px;
+  }
+
+  &__search {
+    .hidden-down(md);
+    float: right;
+    padding: 3px 15px 3px;
+    margin: 5px 0 4px 20px;
+
+    &--active {
+      display: block;
+    }
+
+    input {
+      background-color: #fcfcfc;
+      border: none;
+      cursor: pointer;
+      display: block;
+      margin: 0;
+      padding: 0 3px;
+      height: 18px;
+
+      @media (max-width: @screen-lg) {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        height: 26px;
+      }
+    }
+
+    @media (max-width: @screen-lg) {
+      width: 100%;
+    }
+  }
+
+  &__search-types {
+    .hidden-up(lg);
+    padding: 10px 5px 0 0;
+    margin: 0;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__search-type {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 13px;
+    padding: 2px 8px 2px 8px;
+    height: auto;
+    cursor: pointer;
+    transition: color, 0.3s;
+
+    &:hover {
+      background-color: #555;
+      color: white;
+    }
+    
+    &--active {
+      background-color: #282828;
+    }
+  }
+
+  &__user-box {
+    float: right;
+    margin-top: 0;
+    padding: 7px 10px 4px;
+  }
+
+  &__avatar {
+    height: 20px;
+    width: auto;
+  }
+
+  &__items {
+    .hidden-down(md);
+    float: left;
+    overflow: hidden;
+
+    &--active {
+      display: block;
+
+    @media (max-width: @screen-lg) {
+      width: 100%;
+    }
+    }
+  }
+
+  &__item {
+    transition: backround-color 0.3s ease;
+    background: transparent;
+    display: inline-block;
+    overflow: hidden;
+    color: #e1e7f2;
+    cursor: pointer;
+    float: left;
+    padding: 7px 10px 4px;
+    line-height: 1.65;
+    
+    &:hover {
+      background: #545454;
+      color: white;
+    }
+
+    &--active {
+      background-color: #545454;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: #e1e7f2;
+    }
+
+    @media (max-width: @screen-lg) {
+      border-top: 1px solid white;
+      width: 100%;
+    }
+
+  }
+
+  &__counter {
+    border-radius: 1px;
+    transition: backround-color, 0.3s;
+    background: #5a5a5a;
+    color: #f9f9f9 !important;
+    display: block;
+    float: right !important;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    &:hover {
+      background: #7a7a7a !important;
+      text-decoration: none;
+    }
+  }
+
+  &__mobile {
+    .hidden-up(lg);
+    float: right;
+    padding: 0 10px;
+    line-height: 1.65;
+  }
+
+  &__search_toogler {
+    .hidden-up(lg);
+    float: left;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+
+    &:after {
+      font-family: 'Material Icons';
+      content: '\E8B6';
+      color: #fff;
+      font-size: 1.65rem;
+    }
+
+    &--active {
+      background-color: #545454;
+    }
+  }
+
+  &__burger {
+    .hidden-up(lg);
+    float: left;
+    width: 30px;
+    text-align: center;
+
+    &:after {
+      font-family: 'Material Icons';
+      content: '\E5D2';
+      color: #fff;
+      font-size: 1.65rem;
+    }
+
+    &--active {
+      background-color: #545454;
+    }
+  }
+}
+
+//.top-menu {
+//  border-bottom: 1px solid #444;
+//  position: relative;
+//  background-color: #333;
+//  height: 33px;
+//  z-index: 10;
+//
+//  &__inner {
+//    // TODO разобраться почему .container() ломает верстку, хотя стили все те же, что ниже.
+//    margin-left: auto;
+//    margin-right: auto;
+//    width: 100%;
+//    position: relative;
+//    padding-left: (@grid-gutter-width / 2);
+//    padding-right: (@grid-gutter-width / 2);
+//
+//    @media (min-width: @screen-sm) {
+//      width: @container-sm;
+//    }
+//
+//    @media (min-width: @screen-md) {
+//      width: @container-md;
+//    }
+//
+//    @media (min-width: @screen-lg) {
+//      width: @container-lg;
+//    }
+//
+//    @media (min-width: @screen-xl) {
+//      width: @container-xl;
+//    }
+//
+//    @media (min-width: @screen-xxl) {
+//      width: @container-xxl;
+//    }
+//  }
+//
+//  &__logo {
+//    float: left;
+//    height: 33px;
+//  }
+//
+//  &__search {
+//    .hidden-down(md);
+//    float: right;
+//    height: 17px;
+//    margin: 7px 10px 4px;
+//    padding: 0 5px;
+//    font-family: Tahoma;
+//    font-size: 11px;
+//    line-height: 13px;
+//    width: 167px;
+//  }
+//
+//  &__user-box {
+//    float: right;
+//    margin-top: 0;
+//    padding: 7px 10px 4px;
+//  }
+//
+//  &__avatar {
+//    height: 20px;
+//    width: auto;
+//  }
+//
+//  &__item {
+//    .hidden-down(md);
+//    transition: backround-color 0.3s ease;
+//    background: transparent;
+//    display: inline-block;
+//    overflow: hidden;
+//    color: #e1e7f2;
+//    cursor: pointer;
+//    float: left;
+//    padding: 7px 10px 4px;
+//    line-height: 1.65;
+//
+//    &:hover {
+//      background: #545454;
+//      color: white;
+//    }
+//
+//    &--active {
+//      background-color: #545454;
+//      color: white;
+//    }
+//
+//    a {
+//      text-decoration: none;
+//      color: #e1e7f2;
+//    }
+//  }
+//
+//  &__counter {
+//    border-radius: 1px;
+//    transition: backround-color, 0.3s;
+//    background: #5a5a5a;
+//    color: #f9f9f9 !important;
+//    display: block;
+//    float: right !important;
+//    margin-left: 8px;
+//    font-size: 12px;
+//    font-weight: bold;
+//    text-align: center;
+//    width: 20px;
+//    height: 20px;
+//    line-height: 20px;
+//    &:hover {
+//      background: #7a7a7a !important;
+//      text-decoration: none;
+//    }
+//  }
+//
+//  &__burger {
+//    .hidden-up(lg);
+//  }
+//
+//  &:after {
+//    clear: both;
+//    display: block;
+//    content: " ";
+//  }
+//}

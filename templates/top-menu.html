@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top menu</title>
+  <link href="../dev/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
+</head>
+<body>
+<nav class="top-menu">
+  <div class="top-menu__inner">
+    <div class="top-menu__mobile">
+      <div class="top-menu__search_toogler"></div>
+      <div class="top-menu__burger"></div>
+    </div>
+    <div class="top-menu__user-box">
+      <a href="#"><img class="top-menu__avatar" src="https://placehold.it/48x48"></a>
+      <a class="top-menu__counter" href="#">10</a>
+    </div>
+    <img class="top-menu__logo" src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png">
+    <div class="top-menu__search">
+      <input type="search" title="search" placeholder="search book">
+      <ul class="top-menu__search-types">
+        <li class="top-menu__search-type top-menu__search-type--active">Книга</li>
+        <li class="top-menu__search-type">Автор</li>
+        <li class="top-menu__search-type">ISBN</li>
+        <li class="top-menu__search-type">ASIN</li>
+        <li class="top-menu__search-type">Пользователь</li>
+      </ul>
+    </div>
+    <div class="top-menu__items">
+      <div class="top-menu__item top-menu__item--active"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+    </div>
+  </div>
+</nav>
+<script>
+  $('.top-menu__burger').click(function(){
+    if ($('.top-menu__items').hasClass('top-menu__items--active')) {
+      $('.top-menu__items').removeClass('top-menu__items--active');
+      $('.top-menu__burger').removeClass('top-menu__burger--active');
+    } else {
+      $('.top-menu__items').addClass('top-menu__items--active');
+      $('.top-menu__burger').addClass('top-menu__burger--active');
+      $('.top-menu__search').removeClass('top-menu__search--active');
+      $('.top-menu__search_toogler').removeClass('top-menu__search_toogler--active');
+    }
+  });
+
+  $('.top-menu__search_toogler').click(function(){
+    if ($('.top-menu__search').hasClass('top-menu__search--active')) {
+      $('.top-menu__search').removeClass('top-menu__search--active');
+      $('.top-menu__search_toogler').removeClass('top-menu__search_toogler--active');
+    } else {
+      $('.top-menu__search').addClass('top-menu__search--active');
+      $('.top-menu__search_toogler').addClass('top-menu__search_toogler--active');
+      $('.top-menu__items').removeClass('top-menu__items--active');
+      $('.top-menu__burger').removeClass('top-menu__burger--active');
+    }
+  });
+</script>
+</body>
+</html>

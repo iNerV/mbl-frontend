@@ -1,27 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="../dev/css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
-    <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="../dev/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+  <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
 </head>
 <body>
 <nav class="top-menu">
   <div class="top-menu__inner">
-    <img class="top-menu__logo" src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png">
-    <div class="top-menu__item top-menu__item--active"><a href="#">Books</a></div>
-    <div class="top-menu__item"><a href="#">Books</a></div>
-    <div class="top-menu__item"><a href="#">Books</a></div>
-    <div class="top-menu__item"><a href="#">Books</a></div>
-    <div class="top-menu__item"><a href="#">Books</a></div>
+    <div class="top-menu__mobile">
+      <div class="top-menu__search_toogler"></div>
+      <div class="top-menu__burger"></div>
+    </div>
     <div class="top-menu__user-box">
       <a href="#"><img class="top-menu__avatar" src="https://placehold.it/48x48"></a>
       <a class="top-menu__counter" href="#">10</a>
     </div>
-    <input class="top-menu__search" type="search" title="search" placeholder="search book">
+    <img class="top-menu__logo" src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png">
+    <div class="top-menu__search">
+      <input type="search" title="search" placeholder="search book">
+      <ul class="top-menu__search-types">
+        <li class="top-menu__search-type top-menu__search-type--active">Книга</li>
+        <li class="top-menu__search-type">Автор</li>
+        <li class="top-menu__search-type">ISBN</li>
+        <li class="top-menu__search-type">ASIN</li>
+        <li class="top-menu__search-type">Пользователь</li>
+      </ul>
+    </div>
+    <div class="top-menu__items">
+      <div class="top-menu__item top-menu__item--active"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+    </div>
   </div>
 </nav>
   <!--<div class="wrapper">-->
@@ -864,6 +879,7 @@
   <span class="copyright">© mybooklist.org 2016</span>
 </footer>
 
+<script src="../dev/less/blocks/top-menu/top-menu.js"></script>
 
 <script>
   $(document).ready(function(){
@@ -960,34 +976,34 @@ $(".add-to-list__list-item:not(:first-child)").on("click", function(){
     </script>
 
 <script>
-$(document).ready(function() {
+  $(document).ready(function() {
 
     $(window).scroll (function () {
-    if ($ (this).scrollTop() > 50) {
-    $ ('.to_top').fadeIn();
-    } else {
-    $ ('.to_top').fadeOut();
-    }
+      if ($ (this).scrollTop() > 50) {
+        $ ('.to_top').fadeIn();
+      } else {
+        $ ('.to_top').fadeOut();
+      }
     });
 
     $('.to_top').click(function(){
-        $('body,html').animate({
-            scrollTop: 0
-            }, 100);
-        return false;
+      $('body,html').animate({
+        scrollTop: 0
+      }, 100);
+      return false;
     });
 
-$('.to_top:before').hover(function() {
-    $(this).animate({
+    $('.to_top:before').hover(function() {
+      $(this).animate({
         'opacity':'0.3'
-        }).css({'background-color':'#E1E7ED','width':'40px','content':'.'});
+      }).css({'background-color':'#E1E7ED','width':'40px','content':'.'});
     }, function(){
-            $(this).animate({
-                'opacity':'0.3'
-            }).css({'background':'none'});
+      $(this).animate({
+        'opacity':'0.3'
+      }).css({'background':'none'});
     });
 
-});
+  });
 </script>
 
 </body>
