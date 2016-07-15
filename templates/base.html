@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
   <script src="../dev/less/blocks/to-top/to-top.js"></script>
+  <script src="../dev/less/blocks/comment-notifer/comment-notifer.js"></script>
 </head>
 <body>
 <nav class="top-menu">
@@ -931,50 +932,6 @@ $(".add-to-list__list-item:not(:first-child)").on("click", function(){
 });
 
 </script>
-
-    <script> //comments
-        var dataList = $(".comment").map(function() {
-            return $(this).attr("id");
-        }).get();
-
-        console.log(dataList.length);
-
-
-//        var unread = true;
-//
-//        var dataList2 = $(".comment").map(function() {
-//            return $(this).attr("data-read");
-//        }).get();
-//        console.log(dataList2);
-
-        $.fn.scrollBottom = function() {
-            return $(document).height() - this.scrollTop() - this.height();
-        };
-
-        $(window).scroll (function () {
-            if ($(this).scrollBottom() > 50) {
-                $('.comment-notifer').fadeIn();
-            } else {
-                $('.comment-notifer').fadeOut();
-            }
-        });
-
-        $.fn.scrollView = function () {
-            return this.each(function () {
-                $('html, body').animate({
-                    scrollTop: $(this).offset().top
-                }, 400);
-            });
-        };
-
-        $('.comment-notifer').click(function(){
-//            $('body,html').animate({
-//                scrollTop: $(window).scrollBottom()
-//            }, "slow");
-            $().data(unread).scrollView();
-            return false;
-        });
-    </script>
 
 </body>
 </html>
