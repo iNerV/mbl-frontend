@@ -299,6 +299,93 @@ a:active {
   cursor: pointer;
   background-color: #000;
 }
+h1 {
+  color: #111;
+  font: 26px normal tahoma, verdana, arial, sans-serif;
+  border-bottom: none;
+  display: inline-block;
+  margin: 0;
+}
+time {
+  color: #7b8084;
+}
+abbr {
+  cursor: help;
+}
+.muted-text {
+  color: #7b8084;
+}
+.small-text {
+  font-size: 11px;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+  /* Rules for sizing the icon. */
+}
+.material-icons.md-10 {
+  font-size: 10px;
+}
+.material-icons.md-12 {
+  font-size: 12px;
+}
+.material-icons.md-14 {
+  font-size: 14px;
+}
+.material-icons.md-16 {
+  font-size: 16px;
+}
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-18 {
+  font-size: 20px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+.material-icons a {
+  color: #3f403b;
+  text-decoration: none;
+  cursor: pointer;
+}
+.material-icons a:link {
+  color: #3f403b;
+}
+.material-icons a:visited {
+  color: #3f403b;
+}
+.material-icons a:hover {
+  color: #ff5202;
+}
+.material-icons a:active {
+  color: #ff5202;
+}
 .container {
   display: block;
   width: 100%;
@@ -921,93 +1008,6 @@ label[for="nav-trigger"] {
   padding-left: 0.769rem;
   padding-right: 0.769rem;
 }
-h1 {
-  color: #111;
-  font: 26px normal tahoma, verdana, arial, sans-serif;
-  border-bottom: none;
-  display: inline-block;
-  margin: 0;
-}
-time {
-  color: #7b8084;
-}
-abbr {
-  cursor: help;
-}
-.muted-text {
-  color: #7b8084;
-}
-.small-text {
-  font-size: 11px;
-}
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  vertical-align: middle;
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-  /* Rules for sizing the icon. */
-}
-.material-icons.md-10 {
-  font-size: 10px;
-}
-.material-icons.md-12 {
-  font-size: 12px;
-}
-.material-icons.md-14 {
-  font-size: 14px;
-}
-.material-icons.md-16 {
-  font-size: 16px;
-}
-.material-icons.md-18 {
-  font-size: 18px;
-}
-.material-icons.md-18 {
-  font-size: 20px;
-}
-.material-icons.md-24 {
-  font-size: 24px;
-}
-.material-icons.md-36 {
-  font-size: 36px;
-}
-.material-icons.md-48 {
-  font-size: 48px;
-}
-.material-icons a {
-  color: #3f403b;
-  text-decoration: none;
-  cursor: pointer;
-}
-.material-icons a:link {
-  color: #3f403b;
-}
-.material-icons a:visited {
-  color: #3f403b;
-}
-.material-icons a:hover {
-  color: #ff5202;
-}
-.material-icons a:active {
-  color: #ff5202;
-}
 .top-menu {
   border-bottom: 1px solid #444;
   position: relative;
@@ -1229,6 +1229,7 @@ abbr {
   float: left;
   width: 30px;
   text-align: center;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .top-menu__burger {
