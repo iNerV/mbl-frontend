@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
+  <script src="../dev/less/blocks/to-top/to-top.js"></script>
 </head>
 <body>
 <nav class="top-menu">
@@ -256,7 +257,7 @@
     <!--</footer>-->
 <!--</div>-->
 
-<!--<div class="to_top"></div>-->
+<div class="to_top"></div>
 <div class="comment-notifer">
   <div class="comment-notifer__counter">999</div>
 </div>
@@ -974,37 +975,6 @@ $(".add-to-list__list-item:not(:first-child)").on("click", function(){
             return false;
         });
     </script>
-
-<script>
-  $(document).ready(function() {
-
-    $(window).scroll (function () {
-      if ($ (this).scrollTop() > 50) {
-        $ ('.to_top').fadeIn();
-      } else {
-        $ ('.to_top').fadeOut();
-      }
-    });
-
-    $('.to_top').click(function(){
-      $('body,html').animate({
-        scrollTop: 0
-      }, 100);
-      return false;
-    });
-
-    $('.to_top:before').hover(function() {
-      $(this).animate({
-        'opacity':'0.3'
-      }).css({'background-color':'#E1E7ED','width':'40px','content':'.'});
-    }, function(){
-      $(this).animate({
-        'opacity':'0.3'
-      }).css({'background':'none'});
-    });
-
-  });
-</script>
 
 </body>
 </html>
