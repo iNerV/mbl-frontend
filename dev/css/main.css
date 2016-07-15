@@ -189,6 +189,7 @@ html {
 body {
   background-color: #ddd;
   overflow-x: hidden;
+  background-image: url(https://shikimori.org/assets/background/hexellence-d8c5d160abc0e5f9acdba7a9c10d93f7f2fa958ded048d5ffd0178660dafe427.png);
 }
 a {
   color: #176093;
@@ -1255,8 +1256,7 @@ label[for="nav-trigger"] {
   position: absolute;
   width: 40px;
   height: 100%;
-  color: white;
-  content: '↑';
+  content: '';
   transition: all .3s ease;
 }
 .to_top:hover:before {
