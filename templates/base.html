@@ -883,55 +883,5 @@
 
 <script src="../dev/less/blocks/top-menu/top-menu.js"></script>
 
-<script>
-  $(document).ready(function(){
-    if ($("#show").hasClass("add-to-list__list-item--add")) {
-      $(".add-to-list__list-item--del").css("display", "none");
-    }
-    else {
-      var activeItem = $(".add-to-list__list-item--active").text();
-      $("#show").text(activeItem);
-    }
-    $(".add-to-list__list-item--active").css( "display", "none" );
-  });
-
-  $(".add-to-list__list-item").after().on("click", function(){  //FIXME bug here
-    if ( $(".add-to-list").hasClass("add-to-list--hide") ) {
-      $(".add-to-list").removeClass("add-to-list--hide");
-    }
-    else {
-      $(".add-to-list").addClass("add-to-list--hide");
-    }
-  });
-
-
-$(".add-to-list__list-item:not(:first-child)").on("click", function(){
-
-  var activeItem = $(".add-to-list__list-item--active");
-  var newActiveItem = $(this).text();
-
-  if ( $(this).hasClass("add-to-list__list-item--del") ) {
-    $("#show").addClass("add-to-list__list-item--add");
-    $("#show").text("Добавить в список");
-    $(activeItem).removeClass("add-to-list__list-item--active");
-    $(activeItem).fadeIn();
-    $(".add-to-list__list-item--del").css("display", "none");
-    $(".add-to-list").addClass("add-to-list--hide");
-  }
-  else {
-    if (activeItem !== "") {
-      $(activeItem).removeClass("add-to-list__list-item--active");
-      $(activeItem).fadeIn();
-    }
-    $(this).addClass("add-to-list__list-item--active");
-    $(this).css( "display", "none" );
-    $("#show").text(newActiveItem);
-    $(".add-to-list__list-item--del").fadeIn();
-    $(".add-to-list").addClass("add-to-list--hide");
-  }
-});
-
-</script>
-
 </body>
 </html>
