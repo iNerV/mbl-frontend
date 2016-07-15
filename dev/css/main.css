@@ -1817,6 +1817,13 @@ label[for="nav-trigger"] {
   padding-bottom: 10px;
   border-top: dashed #ddd 1px;
 }
+.comment__answer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: dashed #ddd 1px;
+  width: calc(100% - 50px);
+  margin-left: 50px;
+}
 .comment__header {
   white-space: nowrap;
   overflow: hidden;
@@ -1845,6 +1852,23 @@ label[for="nav-trigger"] {
 }
 .comment__text {
   line-height: 1.65;
+}
+.comment-loader {
+  transition: color, background-color, 0.2s;
+  background: #f9f9f9;
+  color: #555;
+  cursor: pointer;
+  line-height: 1.65;
+  padding: 5px 4px;
+  text-align: center;
+  border: 1px solid #F2F2F2;
+  clear: left;
+  margin: 5px 0;
+}
+.comment-loader:hover {
+  border: 1px solid #E7E7E7;
+  background-color: #EEEEEE;
+  color: black;
 }
 .entry {
   border-top: 1px dashed #DDD;
