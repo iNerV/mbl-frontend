@@ -2615,3 +2615,6 @@ ul.dropdown__menu > li > a:focus {
   resize: none;
   width: 100%;
 }
+.add-form__type {
+  float: right;
+}
