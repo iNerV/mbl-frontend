@@ -5,12 +5,27 @@ var $label = $('.label--hover');
 
 $label.click(
     function() {
-        if ($(this).hasClass('label--'.concat($(this).data('label')))) {
-            $(this).removeClass('label--'.concat($(this).data('label')));
-            $(this).css('background-color', '');
-            $(this).css('border-color', '');
+        if ($(this).parent().hasClass('add-form__type')) {
+            if ($(this).hasClass('label--'.concat($(this).data('label')))) {
+                $(this).removeClass('label--'.concat($(this).data('label')));
+                $(this).css('background-color', '');
+                $(this).css('border-color', '');
+            } else {
+                $(this).addClass('label--'.concat($(this).data('label')));
+            }
         } else {
-            $(this).addClass('label--'.concat($(this).data('label')));
+            if ($(this).hasClass('label--info')) { //fixme для новостей тоже придумать как делать
+                console.log($(this).parent().parent().parent().attr('id'));
+                $(this).remove();
+                $.post(
+                    "https://httpbin.org/post", //fixme поправить на рабочий вариант ;)
+                    {
+                        comment_id: $(this).parent().parent().parent().attr('id'),
+                        viewed: true
+                    },
+                    onAjaxSuccess // callback for test
+                );
+            }
         }
     }
 ).hover(
@@ -29,3 +44,9 @@ $label.click(
         }
     }
 );
+
+function onAjaxSuccess(data) // callback for test
+{
+  // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+  console.log(data['headers']['User-Agent']);
+}

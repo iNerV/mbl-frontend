@@ -1579,6 +1579,10 @@ label[for="nav-trigger"] {
   margin-right: 5px;
   line-height: 1.9;
 }
+.article__markers--right {
+  float: right;
+  margin-left: 5px;
+}
 .article__status-line {
   position: relative;
   font-size: 12px;
