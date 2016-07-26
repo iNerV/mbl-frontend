@@ -642,7 +642,7 @@
         <article class="article">
           <header>
             <aside class="article__markers">
-              <span class="label  label--warning">новость</span>
+              <span class="label  label--warning label--big">новость</span>
             </aside>
             <a href="/" class="article__title">News!</a>
             <div class="article__status-line"><span class="article__info">от <a href="/"><img src="https://placehold.it/16x16">Phoenixx</a></span><time>день назад</time><span class="article__additions"><i class="material-icons md-14">forum</i> 40 <i class="material-icons md-14">equalizer</i> 11/10</span></div>
@@ -868,9 +868,9 @@
         <a class="comment__name" href="/">Test Name</a>
         <a href=""><time class="comment__date">3 дня назад</time></a>
         <div class="comment__review">
-          <span class="label label--info label--hover">новый</span>
-          <span class="label label--success label--hover">Отзыв</span>
-          <span class="label label--offtop label--hover">offtop</span>
+          <span class="label label--info label--hover" data-label="info">новый</span>
+          <span class="label label--success label--hover" data-label="success">Отзыв</span>
+          <span class="label label--offtop label--hover" data-label="offtop">offtop</span>
         </div>
       </div>
       <div class="comment__text">Наконец-то досмотрела, смотрела я его довольно давно. Насчитала я 16 панцу, хотя не знаю зачем я их считала, наверное из-за того, что крутили по телеку. И тройку намеков на яой. Все как-то слишком однообразно, но интересно. Полно однообразной анимации, однообразных превращений, однообразных реплик. Но для своих годов снято годно. Были интересные моменты, были не очень. Не знаю, что насчет сейю, но они мне не очень понравились. Особенно визги, один случай на тысячу, когда мне не очень нравятся сейю и их работа. Понравилась музыка из появления Такседо и во 2 эндинге, восхищения ей особого не было, ну а в остальном как-то не запомнилась. Нарисовано все тоже вполне годно, мне понравилось, есть неплохие биши. Персонажи какие-то тупые, однообразные и неинтересные вышли. Особенно Усаги, она меня бесит, злодеи тоже тупые и не интересные. Только мужик с белой шевелюрой хоть что-то сделал для уничтожения сейлор воинов. Только кошка понравилась, которая Луна. Концовка тоже не понятная спойлер. Вроде понравилось, а вроде и нет. Во всяком случае дальше я смотреть не буду, у меня психика сдаст смотреть ее в лагающем плеере сибнете, гляну только Кристалл, когда он полностью выйдет. 6 сейлор воинов из 10
@@ -882,7 +882,7 @@
           <a class="comment__name" href="/">Test Name</a>
           <a href=""><time class="comment__date">3 дня назад</time></a>
           <div class="comment__review">
-            <span class="label label--info label--hover">новое</span>
+            <span class="label label--info label--hover" data-label="info">новое</span>
           </div>
         </div>
         <div class="comment__text">
@@ -895,7 +895,7 @@
           <a class="comment__name" href="/">Test Name</a>
           <a href=""><time class="comment__date">3 дня назад</time></a>
           <div class="comment__review">
-            <span class="label label--info label--hover">новое</span>
+            <span class="label label--info label--hover" data-label="info">новое</span>
           </div>
         </div>
         <div class="comment__text">
@@ -920,12 +920,12 @@
         <i class="material-icons md-18" onclick="add_code('b', 'to-comment-1')"><a data-toggle="tooltip" data-placement="top" title="Смайлик">face</a></i>
       </div>
       <div class="add-form__type">
-        <span class="label">not-active</span>
-        <span class="label label--success label--hover">success</span>
-        <span class="label label--info label--hover">info</span>
-        <span class="label label--offtop label--hover">offtop</span>
-        <span class="label label--warning label--hover">warning</span>
-        <span class="label label--danger label--hover">danger</span>
+        <span class="label label--hover">not-active</span>
+        <span class="label label--success label--hover" data-label="success">success</span>
+        <span class="label label--info label--hover" data-label="info">info</span>
+        <span class="label label--offtop label--hover" data-label="offtop">offtop</span>
+        <span class="label label--warning label--hover" data-label="warning">warning</span>
+        <span class="label label--danger label--hover" data-label="danger">danger</span>
       </div>
       <textarea class="add-form__text" id='to-comment-1' title=""></textarea>
     </div>
@@ -937,34 +937,6 @@
   <a href="#">Соглашение</a><a href="#">Конфиденциальность</a><a href="#">Карта сайта</a>
   <span class="copyright">© mybooklist.org 2016</span>
 </footer>
-
-<!--<script>-->
-  <!--var $label = $('.status');-->
-  <!---->
-<!--$label.hover(-->
-    <!--function(){-->
-      <!--var $this = $(this);-->
-      <!--$this.data('bgcolor', $this.css('background-color')).css('background-color', ColorLuminance(hexc($this.css("background-color")), -0.06));-->
-    <!--},-->
-    <!--function(){-->
-      <!--var $this = $(this);-->
-      <!--$this.css('background-color', $this.data('bgcolor'));-->
-    <!--}-->
-<!--);-->
-
-<!--$label.hover(-->
-    <!--function(){-->
-      <!--var $this = $(this);-->
-      <!--$this.data('brdcolor', $this.css('border-color')).css('border-color', ColorLuminance(hexc($this.css("background-color")), -0.06));-->
-    <!--},-->
-    <!--function(){-->
-      <!--var $this = $(this);-->
-      <!--$this.css('border-color', $this.data('brdcolor'));-->
-    <!--}-->
-<!--);-->
-
-  <!--console.log(hexc($('#test').css("background-color")));-->
-<!--</script>-->
 
 <script src="../dev/less/blocks/top-menu/top-menu.js"></script>
 <script src="../dev/less/blocks/add-form/add-form.js"></script>

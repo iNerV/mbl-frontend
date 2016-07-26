@@ -3,24 +3,29 @@
  */
 var $label = $('.label--hover');
 
-$label.hover(
-    function(){
-        var $this = $(this);
-        $this.data('bgcolor', $this.css('background-color')).css('background-color', ColorLuminance(hexc($this.css("background-color")), -0.06));
-    },
-    function(){
-        var $this = $(this);
-        $this.css('background-color', $this.data('bgcolor'));
+$label.click(
+    function() {
+        if ($(this).hasClass('label--'.concat($(this).data('label')))) {
+            $(this).removeClass('label--'.concat($(this).data('label')));
+            $(this).css('background-color', '');
+            $(this).css('border-color', '');
+        } else {
+            $(this).addClass('label--'.concat($(this).data('label')));
+        }
     }
-);
-
-$label.hover(
+).hover(
     function(){
-        var $this = $(this);
-        $this.data('brdcolor', $this.css('border-color')).css('border-color', ColorLuminance(hexc($this.css("border-color")), -0.06));
+        if ($(this).hasClass('label--'.concat($(this).data('label')))) {
+            var $this = $(this);
+            $this.data('bgcolor', $this.css('background-color')).css('background-color', ColorLuminance(hexc($this.css("background-color")), -0.06));
+            $this.data('brdcolor', $this.css('border-color')).css('border-color', ColorLuminance(hexc($this.css("border-color")), -0.06));
+        }
     },
-    function(){
-        var $this = $(this);
-        $this.css('border-color', $this.data('brdcolor'));
+    function() {
+        if ($(this).hasClass('label--'.concat($(this).data('label')))) {
+            var $this = $(this);
+            $this.css('background-color', $this.data('bgcolor'));
+            $this.css('border-color', $this.data('brdcolor'));
+        }
     }
 );
