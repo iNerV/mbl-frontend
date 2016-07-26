@@ -2474,6 +2474,10 @@ label[for="nav-trigger"] {
   padding: 0 5px;
   font-size: 14px;
   font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .dropdown--mini {
   max-width: 180px;
