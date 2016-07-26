@@ -1629,6 +1629,10 @@ label[for="nav-trigger"] {
   border: 1px solid #acb1b4;
   background-color: transparent;
 }
+.marker--big {
+  font-size: 12px;
+  line-height: 1.5;
+}
 .marker--success {
   background-color: #4aaa4a;
   border: 1px solid #48a548;
@@ -1675,6 +1679,31 @@ label[for="nav-trigger"] {
   background-color: #fbcfe3;
   border: 1px solid #fac1da;
 }
+.marker--released {
+  background-color: #4aaa4a;
+  border: 1px solid #419541;
+  color: #fff;
+}
+.marker--announcement {
+  background-color: #ca4929;
+  border: 1px solid #b14024;
+  color: #fff;
+}
+.marker--ongoing {
+  background-color: #1d78b7;
+  border: 1px solid #19679d;
+  color: #fff;
+}
+.marker--ignored {
+  background-color: #ff4136;
+  border: 1px solid #ff2417;
+  color: #fff;
+}
+.marker--news {
+  background-color: #ff8a3c;
+  border: 1px solid #ff781d;
+  color: #fff;
+}
 .status {
   cursor: default;
   font-size: 12px;
@@ -1706,6 +1735,54 @@ label[for="nav-trigger"] {
 .status--news {
   background-color: #ff8a3c;
   border: 1px solid #ff781d;
+  color: #fff;
+}
+.label {
+  font-size: 11px;
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: #7b8084;
+  border: 1px solid #acb1b4;
+  background-color: transparent;
+}
+.label--big {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.label--hover {
+  cursor: pointer;
+}
+.label--success {
+  background-color: #4aaa4a;
+  border: 1px solid #419541;
+  color: #fff;
+}
+.label--info {
+  background-color: #1d78b7;
+  border: 1px solid #19679d;
+  color: #fff;
+}
+.label--warning {
+  background-color: #ff8a3c;
+  border: 1px solid #ff781d;
+  color: #fff;
+}
+.label--danger {
+  background-color: #ff4136;
+  border: 1px solid #ff2417;
+  color: #fff;
+  text-decoration: none;
+}
+.label--offtop {
+  background-color: #fcddeb;
+  border: 1px solid #fac1da;
+  color: #f58ebb;
+}
+.label--announcement {
+  background-color: #ca4929;
+  border: 1px solid #b14024;
   color: #fff;
 }
 .add-to-list {

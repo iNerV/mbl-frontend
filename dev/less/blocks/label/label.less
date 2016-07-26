@@ -1,0 +1,56 @@
+.label {
+  font-size: 11px;
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: #7b8084;
+  border: 1px solid #acb1b4;
+  background-color: transparent;
+
+  &--big {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &--hover {
+    cursor: pointer;
+  }
+
+  &--success {
+    background-color: @brand-success;
+    border: 1px solid darken(@brand-success, 6%);
+    color: #fff;
+  }
+
+  &--info {
+    background-color: @brand-info;
+    border: 1px solid darken(@brand-info, 6%);
+    color: #fff;
+  }
+
+  &--warning {
+    background-color: @brand-warning;
+    border: 1px solid darken(@brand-warning, 6%);
+    color: #fff;
+  }
+
+  &--danger {
+    background-color: @brand-danger;
+    border: 1px solid darken(@brand-danger, 6%);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &--offtop {
+    background-color: @brand-offtop;
+    border: 1px solid darken(@brand-offtop, 6%);
+    color: #f58ebb;
+  }
+
+  &--announcement {
+    background-color: @brand-announcement;
+    border: 1px solid darken(@brand-announcement, 6%);
+    color: #fff;
+  }
+}

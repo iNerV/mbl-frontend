@@ -9,6 +9,12 @@
   border: 1px solid #acb1b4;
   background-color: transparent;
 
+  &--big {
+    //cursor: default;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
   &--success {
     background-color: @brand-success;
     border: 1px solid #48a548;
@@ -63,5 +69,35 @@
     background-color: darken(@brand-offtop, 3%);
     border: 1px solid darken(@brand-offtop, 6%);
     }
+  }
+
+  &--released {
+    background-color: @brand-success;
+    border: 1px solid darken(@brand-success, 6%);
+    color: #fff;
+  }
+
+  &--announcement {
+    background-color: @brand-announcement;
+    border: 1px solid darken(@brand-announcement, 6%);
+    color: #fff;
+  }
+
+  &--ongoing {
+    background-color: @brand-info;
+    border: 1px solid darken(@brand-info, 6%);
+    color: #fff;
+  }
+
+  &--ignored {
+    background-color: @brand-danger;
+    border: 1px solid darken(@brand-danger, 6%);
+    color: #fff;
+  }
+
+  &--news {
+    background-color: @brand-warning;
+    border: 1px solid darken(@brand-warning, 6%);
+    color: #fff;
   }
 }

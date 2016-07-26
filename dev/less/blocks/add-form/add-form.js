@@ -7,3 +7,5 @@ function add_code(code, id) {
         replace = '['+code+']' + sel + '[/'+code+']';
     textarea.value = textarea.value.substring(0,start) + replace + textarea.value.substring(end,len);
 }
+
+//todo add func for another btns
