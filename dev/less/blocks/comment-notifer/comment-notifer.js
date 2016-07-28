@@ -1,44 +1,33 @@
 /**
  * Created by NerV on 15.07.2016.
  */
-var dataList = $(".comment").map(function() {
+
+var unread = $('[data-read=false]').map(function() {
     return $(this).attr("id");
 }).get();
 
-console.log(dataList.length);
-
-
-//        var unread = true;
-//
-//        var dataList2 = $(".comment").map(function() {
-//            return $(this).attr("data-read");
-//        }).get();
-//        console.log(dataList2);
-
-$.fn.scrollBottom = function() {
-    return $(document).height() - this.scrollTop() - this.height();
-};
-
-$(window).scroll (function () {
-    if ($(this).scrollBottom() > 50) {
+function checkUnread() {
+    $('.comment-notifer__counter').text(unread.length);
+    if (unread.length > 0) {
         $('.comment-notifer').fadeIn();
     } else {
         $('.comment-notifer').fadeOut();
     }
+}
+
+$(document).load($('.comment-notifer__counter').text(unread.length));
+
+$(document).scroll(function () {
+    unread = $('[data-read=false]').map(function() {
+        return $(this).attr("id");
+    }).get();
+    checkUnread();
 });
 
-$.fn.scrollView = function () {
-    return this.each(function () {
-        $('html, body').animate({
-            scrollTop: $(this).offset().top
-        }, 400);
-    });
-};
-
-$('.comment-notifer').click(function(){
-//            $('body,html').animate({
-//                scrollTop: $(window).scrollBottom()
-//            }, "slow");
-    $().data(unread).scrollView();
-    return false;
+$('.comment-notifer').click(function() {
+    $('html, body').animate({
+        scrollTop: $('#'.concat(unread[0])).offset().top
+    }, 200);
+    // unread.splice(0,1);
+    // checkUnread();
 });

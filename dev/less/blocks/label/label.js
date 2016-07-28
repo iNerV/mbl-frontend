@@ -15,8 +15,8 @@ $label.click(
             }
         } else {
             if ($(this).hasClass('label--info')) { //fixme для новостей тоже придумать как делать
-                console.log($(this).parent().parent().parent().attr('id'));
-                $(this).remove();
+                $(this).closest('[data-read]').attr('data-read', true);
+                $(this).fadeOut();
                 $.post(
                     "https://httpbin.org/post", //fixme поправить на рабочий вариант ;)
                     {
@@ -50,9 +50,9 @@ $(window).scroll(function() {
     $('[data-read=false]').each(function () {
         var elemOffset = $(this).offset().top - $(window).scrollTop();
         var winHeight = $(window).height();
-        if (elemOffset > 0 && elemOffset < winHeight / 2){
+        if (elemOffset > -5 && elemOffset < winHeight / 2){
             $(this).attr('data-read', true);
-            jQuery('.label--info', this).first().remove();
+            jQuery('.label--info', this).first().fadeOut();
         }
     });
 });
