@@ -1794,6 +1794,11 @@ label[for="nav-trigger"] {
   border: 1px solid #b14024;
   color: #fff;
 }
+.label--review {
+  background-color: #f477ad;
+  border: 1px solid #f25b9c;
+  color: #fff;
+}
 .add-to-list {
   position: relative;
   list-style-type: none;

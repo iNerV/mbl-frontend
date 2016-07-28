@@ -45,6 +45,18 @@ $label.click(
     }
 );
 
+// снятие метки "новое" после попадения комментария в верхнюю половину вьюпорта
+$(window).scroll(function() {
+    $('[data-read=false]').each(function () {
+        var elemOffset = $(this).offset().top - $(window).scrollTop();
+        var winHeight = $(window).height();
+        if (elemOffset > 0 && elemOffset < winHeight / 2){
+            $(this).attr('data-read', true);
+            jQuery('.label--info', this).first().remove();
+        }
+    });
+});
+
 function onAjaxSuccess(data) // callback for test
 {
   // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
