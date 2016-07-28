@@ -16,7 +16,7 @@ $label.click(
         } else {
             if ($(this).hasClass('label--info')) { //fixme для новостей тоже придумать как делать
                 $(this).closest('[data-read]').attr('data-read', true);
-                $(this).fadeOut();
+                $(this).clearQueue().fadeOut();
                 $.post(
                     "https://httpbin.org/post", //fixme поправить на рабочий вариант ;)
                     {
@@ -52,7 +52,7 @@ $(window).scroll(function() {
         var winHeight = $(window).height();
         if (elemOffset > -5 && elemOffset < winHeight / 2){
             $(this).attr('data-read', true);
-            jQuery('.label--info', this).first().fadeOut();
+            jQuery('.label--info', this).first().delay(2000).fadeOut();
         }
     });
 });

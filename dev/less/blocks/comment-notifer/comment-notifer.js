@@ -2,9 +2,14 @@
  * Created by NerV on 15.07.2016.
  */
 
-var unread = $('[data-read=false]').map(function() {
-    return $(this).attr("id");
-}).get();
+
+function getUnread() {
+    return $('[data-read=false]').map(function () {
+        return $(this).attr("id");
+    }).get()
+}
+
+var unread = getUnread();
 
 function checkUnread() {
     $('.comment-notifer__counter').text(unread.length);
@@ -18,9 +23,7 @@ function checkUnread() {
 $(document).load($('.comment-notifer__counter').text(unread.length));
 
 $(document).scroll(function () {
-    unread = $('[data-read=false]').map(function() {
-        return $(this).attr("id");
-    }).get();
+    unread = getUnread();
     checkUnread();
 });
 
@@ -28,6 +31,11 @@ $('.comment-notifer').click(function() {
     $('html, body').animate({
         scrollTop: $('#'.concat(unread[0])).offset().top
     }, 200);
-    // unread.splice(0,1);
-    // checkUnread();
 });
+
+// $('[data-read=false]').hover(function () {
+//     $(this).attr('data-read', true);
+//     jQuery('.label--info', this).first().delay(2000).fadeOut();
+//     unread = getUnread();
+//     checkUnread();
+// });
