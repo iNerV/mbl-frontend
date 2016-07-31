@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <script src="../dev/less/blocks/dropdown/dropdown.js"></script>
   <script src="../dev/less/blocks/to-top/to-top.js"></script>
+  <script src="../dev/less/blocks/star-rating/star-rating.js"></script>
   <script src="../dev/js/vendors/hexc.js"></script>
   <script src="../dev/js/vendors/ColorLuminance.js"></script>
 </head>
@@ -300,6 +301,15 @@
               <li><a href="#">Удалить из списка</a></li>
             </ul>
           </div>
+          <div class="rate-it">
+            <div class="rate-it__percent">34</div>
+            <div class="rate-it__progress">Прогресс:</div>
+            <div class="rating" data-rateable="true"></div>
+            <div class="score" data-initrate="2" data-notice='{"0":"","1":"Хуже некуда","2":"Плохо","3":"Нормально","4":"Отлично","5":"Великолепно"}'>
+              <div class="score__value score__value--live"></div>
+              <div class="score__notice score__notice--live"></div>
+            </div>
+          </div>
         </div>
         <div class="about">
           <div class="row">
@@ -319,7 +329,13 @@
             <div class="about__right">
               <div class="info-box">
                 <div class="info-box__title">Рейтинг</div>
-                <p><span class="muted-text">Рейтинг:</span> 18+</p>
+                <div class="info-box__body">
+                  <div class="rating" data-rateable="false"></div>
+                  <div class="score">
+                    <div class="score__value">3.39</div>
+                    <div class="score__notice">Великолепно</div>
+                  </div>
+                </div>
               </div>
               <div class="info-box">
                 <div class="info-box__title">Жанры</div>
@@ -330,7 +346,8 @@
               <div class="info-box__title">Описание</div>
               <p>brigantium Heu, vox!Primus, fortis paluss virtualiter desiderium de talis, camerarius gluten.Bassus byssuss ducunt ad repressor.
                 As i have met you, so you must hear one another. After breaking the white breads, marinate doughnut, truffels and milk with it in a bowl. Damn yer doubloons, feed the scabbard.
-                Shields up. Why does the nanomachine yell? I disrupt this ionic cannon, it's called dead shield.</p>
+                Shields up. Why does the nanomachine yell? I disrupt this ionic cannon, it's called dead shield.
+              </p>
             </div>
           </div>
         </div>
