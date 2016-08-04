@@ -2366,9 +2366,15 @@ label[for="nav-trigger"] {
   background-color: #4682b4;
   float: left;
 }
+.progress__first--inverted {
+  background-color: #B97D4B;
+}
 .progress__second {
   background-color: #79A9CF;
   float: left;
+}
+.progress__second--inverted {
+  background-color: #865630;
 }
 .progress__third {
   background-color: #aaa;
