@@ -1908,18 +1908,36 @@ label[for="nav-trigger"] {
   padding-bottom: 10px;
   border-top: dashed #ddd 1px;
 }
-.comment__answer {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-top: dashed #ddd 1px;
+.comment--answer {
   width: calc(100% - 50px);
   margin-left: 50px;
+}
+.comment__answer {
+  float: right;
+  margin-left: 5px;
+  border-bottom: dashed #176093 1px;
+}
+.comment__answer:hover {
+  border-color: #ff5202;
+}
+.comment__answer--hidden {
+  display: none;
+}
+.comment__answer a {
+  text-decoration: none;
 }
 .comment__header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1;
+}
+.comment__footer {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+  margin-bottom: 10px;
 }
 .comment__img {
   float: left;
@@ -2026,17 +2044,17 @@ label[for="nav-trigger"] {
 .link-btn {
   background-color: #eeeef1;
   color: #123 !important;
+  display: inline-block;
   cursor: pointer;
-  display: block;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   line-height: 1;
   margin-bottom: 10px;
-  padding: 8px 0;
+  padding: 8px 10px;
   text-align: center;
+  transition: all 0.25s ease;
 }
 .link-btn--dark {
-  transition: background-color 0.25s ease, border-color 0.25s ease;
   background-color: #456;
   border-color: #3e4d5d;
   color: #fff !important;
@@ -2044,6 +2062,7 @@ label[for="nav-trigger"] {
 .link-btn--big {
   font-size: 20px;
   padding: 9px 0;
+  display: block;
 }
 .link-btn:hover {
   background-color: #1d78b7;
@@ -2430,6 +2449,9 @@ label[for="nav-trigger"] {
   line-height: 1.65;
   margin-bottom: 15px;
 }
+.profile-info__lists_title a {
+  cursor: pointer;
+}
 .profile-info__lists_title a:link {
   color: #123;
 }
@@ -2719,6 +2741,12 @@ ul.dropdown__menu > li > a:focus {
 .add-form__type {
   float: right;
 }
+.add-form__help {
+  float: right;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.2;
+}
 .jq-stars {
   display: inline-block;
 }
@@ -2810,6 +2838,9 @@ ul.dropdown__menu > li > a:focus {
 }
 .user-table__border th {
   padding-top: 5px;
+}
+.user-table a {
+  cursor: pointer;
 }
 .user-table a:link {
   color: #176093;

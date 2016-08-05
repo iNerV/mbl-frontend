@@ -3,17 +3,38 @@
   padding-bottom: 10px;
   border-top: dashed #ddd 1px;
 
-  &__answer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: dashed #ddd 1px;
+  &--answer {
     width: ~'calc(100% - 50px)';
     margin-left: 50px;
+  }
+
+  &__answer {
+    float: right;
+    margin-left: 5px;
+    border-bottom: dashed @link-color 1px;
+
+    &:hover {
+      border-color: @link-hover-color;
+    }
+
+    &--hidden {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
   }
 
   &__header {
     .text-overflow();
     line-height: 1;
+  }
+
+  &__footer {
+    .text-overflow();
+    line-height: 1;
+    margin-bottom: 10px;
   }
   
   &__img {
