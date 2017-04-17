@@ -1,0 +1,31 @@
+<div>
+  <div class="autocomplete">
+    <input class="autocomplete__input" :class="{'autocomplete__input--error': error}" type="text"
+           title="Начните вводить код или название" placeholder="Начните вводить код или название"
+           v-model="selection" ref="autocomplete"
+           @keydown.enter='enter' @keyup.delete='del'
+           @keyup.esc = 'esc' @keydown.down = 'down'
+           @keydown.up = 'up' @blur = 'focusLeave'
+           @focus = 'onFocus' @input = 'change'>
+    <div class="autocomplete__title" :style="{'display': dspl, 'width': width+'px'}" @click="inputFocus">
+      <div class="autocomplete__titleVal">{{selection}}</div>
+      <div class="autocomplete__titleText">
+        <div class="autocomplete__titleData" :title="city">{{city}}</div>
+      </div>
+    </div>
+  </div>
+  <ul class="autocomplete__items" :class="{'autocomplete__items--active': open}">
+    <li class="autocomplete__item" v-for="(suggestion, index) in matches"
+        v-if="(index <= 4 && matchesLen > 0)" @click="suggestionClick(index)"
+        :class="{'autocomplete__item--active': isActive(index)}">
+      <span style="padding: 0 4px;">{{ suggestion.Id }}</span> <span style="padding: 0 4px;">{{ suggestion.City }}</span>
+    </li>
+    <li class="autocomplete__item autocomplete__item--tip"
+        v-if="matchesLen > 0">Показано <span v-if="matchesLen < 5">{{matchesLen}}</span>
+      <span v-else="">5</span> из {{matchesLen}} найденных городов. Уточните запрос, чобы увидеть остальные
+    </li>
+    <li class="autocomplete__item" :class="{'autocomplete__item--active': isActive(matchesLen)}" v-if="matchesLen <= 0" @click="add">+ Добавить {{val}}</li>
+  </ul>
+  <div class="autocomplete__error" :class="{'autocomplete__error--visible': error}">Добавьте значение в справочник или выберите другое значение из списка.
+  </div>
+</div>

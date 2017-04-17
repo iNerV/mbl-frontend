@@ -1,0 +1,38 @@
+.status {
+  cursor: default;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+
+  &--released {
+    background-color: @brand-success;
+    border: 1px solid darken(@brand-success, 6%);
+    color: #fff;
+  }
+
+  &--announcement {
+    background-color: @brand-announcement;
+    border: 1px solid darken(@brand-announcement, 6%);
+    color: #fff;
+  }
+
+  &--ongoing {
+    background-color: @brand-info;
+    border: 1px solid darken(@brand-info, 6%);
+    color: #fff;
+  }
+
+  &--ignored {
+    background-color: @brand-danger;
+    border: 1px solid darken(@brand-danger, 6%);
+    color: #fff;
+  }
+
+  &--news {
+    background-color: @brand-warning;
+    border: 1px solid darken(@brand-warning, 6%);
+    color: #fff;
+  }
+}

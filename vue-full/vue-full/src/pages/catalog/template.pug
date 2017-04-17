@@ -1,0 +1,28 @@
+div.row
+  div.content
+    div.row
+      entry-card(inList="currently", img="https://d.gr-assets.com/books/1459752962l/24859405.jpg", link="/books/1", year="2017", title="test", author="test")
+      entry-card(inList="on-hold", img="https://d.gr-assets.com/books/1388345557l/29133.jpg", link="/books/2", year="2017", title="test", author="test")
+      entry-card(inList="planned", img="https://d.gr-assets.com/books/1222145606l/4761126.jpg", link="/books/3", year="2017", title="test", author="test")
+      entry-card(inList="dropped", img="https://placehold.it/154x240", link="/books/4", year="2017", title="test", author="test")
+      entry-card(img="https://placehold.it/154x240", link="/books/5", year="2017", title="test", author="test")
+      entry-card(inList="currently", img="https://placehold.it/154x240", link="/books/6", year="2017", title="test", author="test")
+      entry-card(inList="currently", img="https://placehold.it/154x240", link="/books/7", year="2017", title="test", author="test")
+      entry-card(inList="currently", img="https://placehold.it/154x240", link="/books/8", year="2017", title="test", author="test")
+  aside.side-menu
+    div.info-box
+      div.info-box__title Фильтры
+        span.info-box__sub-links.info-box__sub-links--choice-btn
+          i.material-icons.md-18
+            a(href="#") done
+      ul.collection-filters
+        li.collection-filters__item
+          input(type="checkbox", title="")
+          | test
+        li.collection-filters__item.collection-filters__item--selected
+          input(type="checkbox", title="")
+          | test
+          i.material-icons.md-18.collection-filters__item__item-add add
+        li.collection-filters__item
+          input(type="checkbox", title="")
+          | test

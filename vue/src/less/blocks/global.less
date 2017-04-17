@@ -1,0 +1,38 @@
+html {
+  font-size: @font-size;
+  font-family: @font-family-base;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #ddd url(https://shikimori.org/assets/background/type.png);
+  overflow-x: hidden;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  cursor: pointer;
+  &:link{color: @link-color}
+  &:visited{color: @link-color}
+  &:hover{
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+
+  }
+  &:active{
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+  }
+}
+
+.right {
+  float: right;
+}
+

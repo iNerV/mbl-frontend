@@ -1,0 +1,87 @@
+.jq-stars {
+  display: inline-block;
+}
+
+.jq-rating-label {
+  font-size: 22px;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  font-family: helvetica, arial, verdana;
+}
+
+.jq-star {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.jq-star-svg {
+  padding-left: 3px;
+  width: 100%;
+  height: 100% ;
+}
+
+.jq-star:hover .fs-star-svg path {
+}
+
+.jq-star-svg path {
+  /* stroke: #000; */
+  stroke-linejoin: round;
+}
+
+/* un-used */
+.jq-shadow {
+  filter: drop-shadow( -2px -2px 2px #888 );
+}
+
+.rate-it {
+  padding-bottom: 30px;
+
+  &__progress {
+    margin-bottom: 15px;
+  }
+
+  &__percent {
+    float: right;
+
+    &:after {
+      content: '%';
+      //margin-right: 5px;
+    }
+  }
+}
+
+.rating {
+  display: table-cell;
+  position: relative;
+}
+
+.score {
+  padding-left: 10px;
+  color: #444;
+  display: table-cell;
+  text-align: center;
+
+  &__value {
+    font-size: 33px;
+    text-align: left;
+
+    &--live {
+      //padding-left: 10px;
+    }
+  }
+
+  &__notice {
+    color: #123;
+    font-size: 11px;
+    line-height: 1;
+    margin-top: -5px;
+    text-align: center;
+
+    &--live {
+      //padding-left: 10px;
+    }
+  }
+}

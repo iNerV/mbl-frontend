@@ -1,0 +1,25 @@
+div.add-form
+  div.add-form__bbcode
+    icon(ico="format_bold")
+    icon(ico="format_italic")
+    icon(ico="format_underlined")
+    icon(ico="strikethrough_s")
+    icon(ico="insert_link")
+    icon(ico="insert_photo")
+    icon(ico="format_quote")
+    icon(ico="warning")
+    icon(ico="file_upload")
+    icon(ico="face")
+  div.add-form__type
+    my-label(type="success", text="success", :active="false")
+    my-label(type="info", text="info", :active="false")
+    my-label(type="offtop", text="offtop", :active="false")
+    my-label(type="warning", text="warning", :active="false")
+    my-label(type="danger", text="danger", :active="false")
+  textarea.add-form__text
+  div.add-form__footer
+    btn(text="Ответить", color="dark")
+    |
+    |
+    btn(text="Предпросмотр", color="dark")
+    a.add-form__help справка по бб-кодам

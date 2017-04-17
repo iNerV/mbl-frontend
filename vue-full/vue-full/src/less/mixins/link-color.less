@@ -1,0 +1,17 @@
+.link(@color: @link-color, @hover-color: @link-hover-color, @decoration: @link-hover-decoration) {
+  cursor: pointer;
+  &:link {
+    color: @color;
+  }
+  &:visited {
+    color: @color;
+  }
+  &:hover {
+    text-decoration: @decoration;
+    color: @hover-color;
+  }
+  &:active {
+    text-decoration: @decoration;
+    color: @hover-color;
+  }
+}

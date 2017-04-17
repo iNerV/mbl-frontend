@@ -1,0 +1,25 @@
+<nav class="top-menu">
+  <div class="top-menu__inner">
+    <div class="top-menu__mobile">
+      <div class="top-menu__search_toogler" @click="toggleSearch" :class="{ 'top-menu__search_toogler--active': openSearch }"></div>
+      <div class="top-menu__burger" @click="toggleMenu" :class="{ 'top-menu__burger--active': openMenu }"></div>
+    </div>
+    <div class="top-menu__user-box">
+      <a href="#"><img class="top-menu__avatar" src="https://placehold.it/48x48"></a>
+      <a class="top-menu__counter" href="#">10</a>
+    </div>
+    <a href="/"><img class="top-menu__logo" src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png"></a>
+    <search :searchToggler="openSearch" :suggestions="cities" :selection.sync="value"></search>
+    <div class="top-menu__items" :class="{'top-menu__items--active': openMenu} ">
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <router-link class="top-menu__item" active-class="top-menu__item--active" tag="div" to="/bar">
+        <a>Go to Bar</a>
+      </router-link>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <div class="top-menu__item"><a href="#">Books</a></div>
+      <router-link class="top-menu__item" active-class="top-menu__item--active" tag="div" :to="'books'">
+        <a>Go to Books</a>
+      </router-link>
+    </div>
+  </div>
+</nav>

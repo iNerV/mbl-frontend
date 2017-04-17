@@ -1,0 +1,10 @@
+div
+  page-title(title="Test")
+  info-box(box-title="Настройки", size="big", sub-links-position-right=true)
+    router-link(slot="sub_link", to="/u/nerv/settings/account", active-class="info-box__active") Аккаунт
+    router-link(slot="sub_link", to="/u/nerv/settings/profile", active-class="info-box__active") Профиль
+    router-link(slot="sub_link", to="/u/nerv/settings/styles", active-class="info-box__active") Внешний вид сайта
+    router-link(slot="sub_link", to="/u/nerv/settings/list", active-class="info-box__active") Списки книг
+    router-link(slot="sub_link", to="/u/nerv/settings/notifications", active-class="info-box__active") Уведомления
+    router-link(slot="sub_link", to="/u/nerv/settings/misc", active-class="info-box__active") Прочее
+    router-view

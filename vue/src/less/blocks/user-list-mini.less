@@ -1,0 +1,62 @@
+.user-list-mini {
+  border: 1px solid @blue--light;
+  background-color: @blue--lightest;
+  padding: 5px 10px 0;
+  line-height: 1.65;
+
+  &__title {
+    margin-bottom: 2px;
+    font-weight: bold;
+  }
+
+  &__list {
+    margin: 0 0 20px;
+    padding: 0;
+  }
+
+  &__item {
+    margin-left: 0;
+  }
+
+  &__quantity {
+    float: right;
+  }
+
+  &__additional {
+    .text-overflow();
+    color: @grey--lightest;
+    font-size: 11px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  &__sub-links {
+    line-height: 1;
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: 3px;
+    text-transform: none;
+    vertical-align: middle;
+
+    a {
+      &:link {
+        border-bottom: 1px dotted @link-color;
+      }
+      &:visited {
+        border-bottom: 1px dotted @link-color;
+      }
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px dotted @link-hover-color;
+      }
+      &:active {
+        text-decoration: none;
+        border-bottom: 1px dotted @link-hover-color;
+      }
+    }
+  }
+}

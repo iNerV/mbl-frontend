@@ -1,0 +1,103 @@
+.marker {
+  cursor: pointer;
+  font-size: 11px;
+  line-height: 1.4;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  color: #7b8084;
+  border: 1px solid #acb1b4;
+  background-color: transparent;
+
+  &--big {
+    //cursor: default;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  &--success {
+    background-color: @brand-success;
+    border: 1px solid #48a548;
+    color: #fff;
+
+    &:hover {
+    background-color: darken(@brand-success, 6%);
+    border: 1px solid darken(#48a548, 6%);
+    }
+  }
+
+  &--info {
+    background-color: @brand-info;
+    border: 1px solid darken(@brand-info, 6%);
+    color: #fff;
+
+    &:hover {
+    background-color: darken(@brand-info, 6%);
+    border: 1px solid darken(@brand-info, 12%);
+    }
+  }
+
+  &--warning {
+    background-color: @brand-warning;
+    border: 1px solid darken(@brand-warning, 6%);
+    color: #fff;
+
+    &:hover {
+    background-color: darken(@brand-warning, 6%);
+    border: 1px solid darken(@brand-warning, 12%);
+    }
+  }
+
+  &--danger {
+    background-color: @brand-danger;
+    border: 1px solid darken(@brand-danger, 6%);
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+    background-color: darken(@brand-danger, 6%);
+    border: 1px solid darken(@brand-danger, 12%);
+    }
+  }
+
+  &--offtop {
+    background-color: @brand-offtop;
+    border: 1px solid darken(@brand-offtop, 6%);
+    color: #f58ebb;
+
+    &:hover {
+    background-color: darken(@brand-offtop, 3%);
+    border: 1px solid darken(@brand-offtop, 6%);
+    }
+  }
+
+  &--released {
+    background-color: @brand-success;
+    border: 1px solid darken(@brand-success, 6%);
+    color: #fff;
+  }
+
+  &--announcement {
+    background-color: @brand-announcement;
+    border: 1px solid darken(@brand-announcement, 6%);
+    color: #fff;
+  }
+
+  &--ongoing {
+    background-color: @brand-info;
+    border: 1px solid darken(@brand-info, 6%);
+    color: #fff;
+  }
+
+  &--ignored {
+    background-color: @brand-danger;
+    border: 1px solid darken(@brand-danger, 6%);
+    color: #fff;
+  }
+
+  &--news {
+    background-color: @brand-warning;
+    border: 1px solid darken(@brand-warning, 6%);
+    color: #fff;
+  }
+}

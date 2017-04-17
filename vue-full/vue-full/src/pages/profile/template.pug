@@ -1,0 +1,158 @@
+div
+  div.l-profile-head
+    div.l-profile-head__info
+      div.avatar
+        img(src="https://placehold.it/160x160")
+        div.profile-action.profile-action--md
+          router-link(to="dialogs", append): icon(name="chat_bubble", size=18)
+          router-link(to="favorite", append): icon(name="favorite", size=18)
+          router-link(to="settings", append): icon(name="settings", size=18)
+      div.title
+        h1 Nickname - {{ $route.params.slug }}
+        div.title__breadcrumbs.title__breadcrumbs--wrap
+          span Владимир Войтенко
+          span муж
+          span 22 года
+          span Красноярск
+          span vk.com
+          span на сайте с
+            abbr(title="3 февраля 2013г.")  2013 г.
+      div.profile-action.profile-action--sm
+        a(href="#") Написать
+        a(href="#") Удалить из друзей
+        a(href="#") Добавить в игнор
+        a(href="#") История банов
+      div.profile-info.profile-info--md
+        a.profile-info__title(href="#") Список читаемого
+        a.profile-info__compatibility(href="#") Похожие пользователи
+        div.progress
+          div.progress__first(style="width:33.3%") 33
+          div.progress__second(style="width:33.3%") 33
+          div.progress__third(style="width:33.3%") 33
+        div.profile-info__lists_title
+          a(href="#") Запланировано (999)
+          a(href="#") Читаю (999)
+          a(href="#") Прочитано (999)
+          a(href="#") Отложено (999)
+          a(href="#") Брошено (999)
+        a.profile-info__title(href="#") Список книг
+        a.profile-info__compatibility(href="#") Похожие пользователи
+        div.progress
+          div.progress__first.progress__first--inverted(style="width:33.3%") 33
+          div.progress__second.progress__second--inverted(style="width:33.3%") 33
+          div.progress__third(style="width:33.3%") 33
+        div.profile-info__lists_title
+          a(href="#") Хочу купить (999)
+          a(href="#") Владею (999)
+          a(href="#") Отдал почитать (999)
+        div.profile-info__additionals
+          b Активность:
+          a(href="#") 5 отзывов
+          a(href="#") 908 правок контента
+          a(href="#") 273477 правок видео
+          a(href="#") 562 комментария
+    div.l-profile-head__history
+      info-box(boxTitle="История", flex=true, link="history")
+        div.entry.entry--history
+          img.entry__img.entry__img--profile(src="https://placehold.it/48x75")
+          div.entry__info
+            a.entry__name(href="/") Bishoujo Senshi Sailor Moon
+            span.entry__misc Прочитано
+            time.small-text 31 день назад
+        div.entry.entry--history
+          img.entry__img.entry__img--profile(src="https://placehold.it/48x75")
+          div.entry__info
+            a.entry__name(href="/") Bishoujo Senshi Sailor Moon
+            span.entry__misc Прочитано
+            time.small-text 31 день назад
+        div.entry.entry--history
+          img.entry__img.entry__img--profile(src="https://placehold.it/48x75")
+          div.entry__info
+            a.entry__name(href="/") Bishoujo Senshi Sailor Moon
+            span.entry__misc Прочитано
+            time.small-text 31 день назад
+    div.profile-info.profile-info--sm
+      a.profile-info__title(href="#") Список читаемого
+      a.profile-info__compatibility(href="#") Похожие пользователи
+      div.progress
+        div.progress__first(style="width:33.3%") 33
+        div.progress__second(style="width:33.3%") 33
+        div.progress__third(style="width:33.3%") 33
+      div.profile-info__lists_title
+        a(href="#") Запланировано (999)
+        a(href="#") Читаю (999)
+        a(href="#") Прочитано (999)
+        a(href="#") Отложено (999)
+        a(href="#") Брошено (999)
+      a.profile-info__title(href="#") Список книг
+      a.profile-info__compatibility(href="#") Похожие пользователи
+      div.progress
+        div.progress__first.progress__first--inverted(style="width:33.3%") 33
+        div.progress__second.progress__second--inverted(style="width:33.3%") 33
+        div.progress__third(style="width:33.3%") 33
+      div.profile-info__lists_title
+        a(href="#") Хочу купить (999)
+        a(href="#") Владею (999)
+        a(href="#") Отдал почитать (999)
+      div.profile-info__additionals
+        b Активность:
+          a(href="#") 5 отзывов
+        a(href="#") 908 правок контента
+        a(href="#") 273477 правок видео
+        a(href="#") 562 комментария
+  div.l-profile-content
+    div.l-profile-content__left
+      info-box(boxTitle="Избранное", flex=true, is-no-wrap=true, link="favorite")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+        figure.entry-card.entry-card--favorites
+          span.entry-card__in_list.entry-card__in_list--hidden
+          img.entry-card__cover(src="https://placehold.it/154x240")
+    div.l-profile-content__right
+      div.row
+        div.l-profile-content__friends
+          info-box(boxTitle="Друзья", link="friends")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+            img.info-box__avatar32(src="https://placehold.it/32x32")
+        div.l-profile-content__clubs
+          info-box(boxTitle="Клубы", link="clubs")
+            img.info-box__avatar48(src="https://placehold.it/64x64")
+            img.info-box__avatar48(src="https://placehold.it/64x64")
+            img.info-box__avatar48(src="https://placehold.it/64x64")
+            img.info-box__avatar48(src="https://placehold.it/64x64")
+  info-box(boxTitle="Обо мне")
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae dolorum ipsa minus odit officia repudiandae ut vel. Dolores ea fugit id in, ipsum itaque laboriosam maiores molestias nemo non nostrum odio odit perspiciatis qui quos ratione, repellat sit vero! Asperiores, dolor dolores ducimus expedita facilis ipsa laborum nam sit?
+  info-box(boxTitle="Лента")
+    div.comment-loader Загрузить еще 10 из 999 комментариев
+    comment
+  info-box(boxTitle="Ваш комментарий")
+    add-form

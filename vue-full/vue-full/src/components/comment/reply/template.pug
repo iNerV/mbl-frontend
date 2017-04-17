@@ -1,0 +1,12 @@
+div.comment.comment--reply(@mouseenter="mouseOver", @mouseleave="mouseOver")
+  div.comment__img: img(src="https://placehold.it/45x45")
+  div.comment__header
+    router-link.comment__name(to="/") Test Name
+    router-link(to=""): time.comment__date 3 дня назад
+    div.comment__review
+      my-label(type="info") новое
+    div.comment__actions(v-show="isVisible")
+      div.comment__action: router-link(to=""): icon(name="reply", size=16)
+      div.comment__action: router-link(to=""): icon(name="format_quote", size=16)
+      div.comment__action: router-link(to=""): icon(name="delete", size=16)
+  div.comment__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci aliquid blanditiis commodi consectetur consequatur corporis delectus deleniti dicta dolore, dolorem ducimus eaque enim eos esse eum ex facere fuga hic id illum impedit ipsa ipsam nemo nisi obcaecati possimus quia reiciendis sequi sint sit tempora, ut velit, voluptatum.

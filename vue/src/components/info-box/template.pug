@@ -1,0 +1,11 @@
+div.info-box
+  div.info-box__title(:class="classTitle", v-if="link"): router-link(:to="link", append) {{ boxTitle }}
+  div.info-box__title(:class="classTitle", v-else) {{ boxTitle }}
+    span.info-box__sub-links.info-box__sub-links--right(v-if="subLinksPositionRight == true"): slot(name="sub_link")
+    span.info-box__sub-links(v-else): slot(name="sub_link")
+  template(v-if="flex == false")
+    div.info-box__body
+      slot
+  template(v-else)
+    div.info-box__flex-body(:class="{'info-box__flex-body--no-wrap': isNoWrap}")
+      slot

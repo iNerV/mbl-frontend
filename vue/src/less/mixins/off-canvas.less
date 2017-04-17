@@ -1,0 +1,63 @@
+.off-canvas(@screen, @column, @columns) {
+  .get-width(@column, @columns);
+  & when (@screen = xs) {
+    right: @width;
+  }
+  & when (@screen = sm) {
+    @media (min-width: @screen-sm) {
+      right: @width;
+    }
+  }
+  & when (@screen = md) {
+    @media (min-width: @screen-md) {
+      right: @width;
+    }
+  }
+  & when (@screen = lg) {
+    @media (min-width: @screen-lg) {
+      right: @width;
+    }
+  }
+  & when (@screen = xl) {
+    @media (min-width: @screen-xl) {
+      right: @width;
+    }
+  }
+  & when (@screen = xxl) {
+    @media (min-width: @screen-xxl) {
+      right: @width;
+    }
+  }
+}
+
+.off-canvas--label(@screen, @column, @columns) {
+  .get-width(@column, @columns);
+  & when (@screen = xs) {
+    right: ~'calc(@{width} + 15px)';
+  }
+  & when (@screen = sm) {
+    @media (min-width: @screen-sm) {
+      right: ~'calc(@{width} + 15px)';
+    }
+  }
+  & when (@screen = md) {
+    @media (min-width: @screen-md) {
+      right: ~'calc(@{width} + 15px)';
+    }
+  }
+  & when (@screen = lg) {
+    @media (min-width: @screen-lg) {
+      right: ~'calc(@{width} + 15px)';
+    }
+  }
+  & when (@screen = xl) {
+    @media (min-width: @screen-xl) {
+      right: ~'calc(@{width} + 15px)';
+    }
+  }
+  & when (@screen = xxl) {
+    @media (min-width: @screen-xxl) {
+      right: ~'calc(@{width} + 15px)';
+    }
+  }
+}

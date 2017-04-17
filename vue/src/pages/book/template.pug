@@ -1,0 +1,182 @@
+div
+  page-title(title="Title")
+  div.row
+    input.nav-trigger#nav-trigger(type="checkbox")
+    label(for="nav-trigger")
+    div.content
+      div.row
+        div.image
+          div.cover
+            img.cover__img(src="https://d.gr-assets.com/books/1399584431l/45112.jpg")
+            div.cover__action
+              icon(ico="chat_bubble", link="#")
+              icon(ico="create", link="#")
+              icon(ico="favorite", link="#")
+              icon(ico="settings", link="#")
+          dropdown.trigger-menu(:isTrigger="true", onEvent="click")
+            span(slot="icon") playlist_add
+            a(slot="header") Добавить в список
+            a(slot="item") Прочитано
+            a(slot="item") Брошено
+            a(slot="item") Отложено
+            a(slot="item") Запланированно
+            a(slot="item") Перечитываю
+            a(slot="item") Читаю
+            a(slot="item") Удалить из списка
+          div.rate-it
+            div.rate-it__percent 34
+            div.rate-it__progress Прогресс:
+            div.rating(data-rateable="true")
+            div.score
+              div.score__value.score__value--live
+              div.score__notice.score__notice--live
+        div.about
+          div.row
+            div.about__left
+              info-box(boxTitle="Информация")
+                p
+                  span.muted-text ISBN:
+                  |
+                  | 5-699-52378-8
+                  |
+                  a(href="") и др.
+                p
+                  span.muted-text ISBN13:
+                  |
+                  | 978-5-699-52378-8
+                  |
+                  a(href="") и др.
+                p
+                  span.muted-text ASIN:
+                  |
+                  | B00005N5PF
+                  |
+                  a(href="") и др.
+                p
+                  span.muted-text Языки:
+                  |
+                  | Русский, English
+                  |
+                  a(href="") и др.
+                p
+                  span.muted-text
+                    abbr(title="В различных изданиях и на разных языках количество страниц отличается") Страниц:
+                  |
+                  | от 100 до 1500
+                p
+                  span.muted-text Форматы:
+                  |
+                  | paperback, hardcover
+                  |
+                  a(href="") и др.
+                p
+                  span.muted-text Дата первой публикации:
+                  |
+                  | 01.01.1997
+                  |
+                p
+                  span.muted-text Рейтинг:
+                  |
+                  | 18+
+                  |
+            div.about__right
+              info-box(boxTitle="Рейтинг")
+                div.rating(data-rateable="false")
+                div.score
+                  div.score__value 3.39
+                  div.score__notice Великолепно
+              info-box(boxTitle="Жанры")
+                p Мистика, Экшен, Фантастика
+            info-box(boxTitle="Описание")
+              p brigantium Heu, vox!Primus, fortis paluss virtualiter desiderium de talis, camerarius gluten.Bassus byssuss ducunt ad repressor.
+                | As i have met you, so you must hear one another. After breaking the white breads, marinate doughnut, truffels and milk with it in a bowl. Damn yer doubloons, feed the scabbard.
+                | Shields up. Why does the nanomachine yell? I disrupt this ionic cannon, it's called dead shield.
+      div.row
+        div.relations
+          info-box(boxTitle="Связанное", sub-links-position-right=true)
+            a(slot="sub_link", href="/") Напрямую
+            a(slot="sub_link", href="/") Хронология
+            div.entry
+              img.entry__img(src="https://placehold.it/48x75")
+              div.entry__info
+                a.entry__name(href="/") Name
+                span.entry__additional Продолжение
+                span.entry__additional (Новелла, 2014 г.)
+                br
+                dropdown(:isTrigger="true", :isMini="true", onEvent="click")
+                  span(slot="icon") playlist_add
+                  a(slot="header") Добавить в список
+                  a(slot="item") Прочитано
+                  a(slot="item") Брошено
+                  a(slot="item") Отложено
+                  a(slot="item") Запланированно
+                  a(slot="item") Перечитываю
+                  a(slot="item") Читаю
+                  a(slot="item") Удалить из списка
+              div.entry
+                | ssss
+        div.authors
+          info-box(boxTitle="Авторы", link='authors')
+            div.entry
+              img.entry__img(src="https://placehold.it/48x75")
+              div.entry__info
+                a.entry__name(href="/") Name
+                span.entry__additional Автор
+            div.entry
+              img.entry__img(src="https://placehold.it/48x75")
+              div.entry__info
+                a.entry__name(href="/") Name
+                span.entry__additional Автор
+      info-box(boxTitle="Отзывы", sub-links-position-right=true)
+        a(slot="sub_link", href="/") Все отзывы (69)
+        a(slot="sub_link", href="/") Все комментарии (1083)
+        div.comment-loader Загрузить еще 10 из 999 отзывов
+        comment
+        add-form
+    aside.side-menu
+      info-box(boxTitle="Информация")
+        p
+          span.muted-text ISBN:
+          |
+          | 5-699-52378-8
+          |
+          a(href="") и др.
+        p
+          span.muted-text ISBN13:
+          |
+          | 978-5-699-52378-8
+          |
+          a(href="") и др.
+        p
+          span.muted-text ASIN:
+          |
+          | B00005N5PF
+          |
+          a(href="") и др.
+        p
+          span.muted-text Языки:
+          |
+          | Русский, English
+          |
+          a(href="") и др.
+        p
+          span.muted-text
+            abbr(title="В различных изданиях и на разных языках количество страниц отличается") Страниц:
+          |
+          | от 100 до 1500
+        p
+          span.muted-text Форматы:
+          |
+          | paperback, hardcover
+          |
+          a(href="") и др.
+        p
+          span.muted-text Дата первой публикации:
+          |
+          | 01.01.1997
+          |
+        p
+          span.muted-text Рейтинг:
+          |
+          | 18+
+          |

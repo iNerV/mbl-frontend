@@ -1,0 +1,16 @@
+div.dropdown(:class="{'trigger-menu': isTrigger, 'trigger-menu--mini': isMini}")
+  template(v-if="onEvent === 'click'")
+    i.material-icons.md-24: slot(name="icon")//- playlist_add
+    |
+    slot(name="header")
+    a.dropdown__toggler(@click="open")
+    div.dropdown__content(:class="{" +
+    "'dropdown__content--open': isOpen," +
+    "'trigger-menu__content': isTrigger," +
+    "'trigger-menu__content--mini': isMini}")
+      slot(name="item")
+  template(v-else)
+    div.dropdown.dropdown__hovered
+      slot(name="header")
+      div.dropdown__content.dropdown__content--left
+        slot(name="item")

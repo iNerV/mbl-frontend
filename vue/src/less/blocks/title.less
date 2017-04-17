@@ -1,0 +1,28 @@
+.title {
+  margin-bottom: 15px;
+  .text-overflow();
+
+  &__breadcrumbs {
+    .text-overflow();
+    color: #333;
+    font-size: 12px;
+    line-height: 1.65;
+    margin: 2px 0 2px 1px;
+
+    &--wrap {
+      white-space: normal;
+    }
+
+    a:not(:last-child):after {
+      content: "/";
+      color: @grey--lighter;
+      padding: 0 5px;
+    }
+
+    span:not(:last-child):after {
+      content: "/";
+      color: @grey--lighter;
+      padding: 0 5px;
+    }
+  }
+}

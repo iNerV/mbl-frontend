@@ -1,0 +1,18 @@
+div.comment
+  div(@mouseenter="mouseOver", @mouseleave="mouseOver")
+    div.comment__img: img(src="https://placehold.it/45x45")
+    div.comment__header
+      router-link.comment__name(to="/") Test Name
+      router-link(to="/"): time.comment__date 3 дня назад
+      div.comment__review
+        my-label(type="info") новое
+        my-label(type="offtop") оффтоп
+        my-label(type="success") отзыв
+      div.comment__actions(v-show="isVisible")
+        div.comment__action: router-link(to=""): icon(name="reply", size=16)
+        div.comment__action: router-link(to=""): icon(name="format_quote", size=16)
+        div.comment__action: router-link(to=""): icon(name="delete", size=16)
+    div.comment__text Ubi est gratis stella? Mirabilis mineraliss ducunt ad abaculus. Vita peregrinationes, tanquam fatalis rumor.
+  div.comment-loader.comment-loader--answer Загрузить еще 10 из 999 ответов
+  reply
+  reply

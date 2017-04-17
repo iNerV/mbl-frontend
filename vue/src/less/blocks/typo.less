@@ -1,0 +1,74 @@
+// Headers
+h1 {
+  color: #111;
+  font: 26px normal tahoma, verdana, arial, sans-serif;
+  border-bottom: none;
+  display: inline-block;
+  margin: 0; // tmp
+}
+
+// time
+time {
+  color: @grey--lightest;
+}
+
+abbr[title] {
+  cursor: help;
+  text-decoration: none;
+  border-bottom: 1px dashed #bbb;
+}
+
+.muted-text {
+  color: @grey--lightest;
+}
+
+.small-text {
+  font-size: 11px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+
+    /* Rules for sizing the icon. */
+  &.md-10 { font-size: 10px; }
+  &.md-12 { font-size: 12px; }
+  &.md-14 { font-size: 14px; }
+  &.md-16 { font-size: 16px; }
+  &.md-18 { font-size: 18px; }
+  &.md-18 { font-size: 20px; }
+  &.md-24 { font-size: 24px; }
+  &.md-36 { font-size: 36px; }
+  &.md-48 { font-size: 48px; }
+
+  a {
+    color: #3f403b;
+    text-decoration: none;
+    cursor: pointer;
+    &:link{color: #3f403b}
+    &:visited{color: #3f403b}
+    &:hover{color: #ff5202}
+    &:active{color: #ff5202}
+  }
+}

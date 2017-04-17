@@ -1,0 +1,45 @@
+@import "../../less/variables";
+@import "../../less/mixins/mixins";
+
+.link-btn {
+  background-color: #eeeef1;
+  color: #123 !important;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  transition: all 0.25s ease;
+
+  &--dark {
+    background-color: #456;
+    border-color: #3e4d5d;
+    color: #fff !important;
+  }
+
+  &--big {
+    font-size: 20px;
+    padding: 9px 0;
+    display: block;
+  }
+
+  &:hover {
+    background-color: #1d78b7;
+    border-color: #1c72ae;
+    color: #fff !important;
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: darken(#1d78b7, 6%);
+    border-color: darken(#1c72ae, 6%);
+    color: darken(#fff, 6%);
+  }
+
+  &:visited {
+    color: #123;
+  }
+}

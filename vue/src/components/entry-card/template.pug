@@ -1,0 +1,8 @@
+figure.entry-card(:class="classObject")
+  router-link(:to="link")
+    span.entry-card__in_list(:class="listClass")
+    img.entry-card__cover(:class="imgClass", :src="img")
+    figcaption.entry-card__caption
+      div.entry-card__title {{ title }}
+      div.entry-card__misc {{ author }}
+        span.right {{ year }}

@@ -1,0 +1,28 @@
+nav.top-menu
+  div.top-menu__inner
+    div.top-menu__mobile
+      div.top-menu__search_toogler(@click="toggleSearch", :class="{ 'top-menu__search_toogler--active': openSearch }")
+      div.top-menu__burger(@click="toggleMenu", :class="{ 'top-menu__burger--active': openMenu }")
+    div.top-menu__user-box
+      dropdown
+        router-link(to="/u/nerv", slot="header"): img.top-menu__avatar(src="https://placehold.it/48x48")
+        router-link(to="/u/nerv/settings", slot="item") Настройки
+        router-link(to="", slot="item") Настройки
+        router-link(to="", slot="item") Настройки
+        router-link(to="", slot="item") Настройки
+        router-link(to="", slot="item") Настройки
+      a.top-menu__counter(href="#") 10
+    router-link(to="/"): img.top-menu__logo(src="https://monosnap.com/file/rPhefAt7k9V54AwoZqC4F5GpPIVukF.png")
+    //search(:searchToggler="openSearch", :suggestions="cities", :selection.sync="value")
+    div.top-menu__items(:class="{'top-menu__items--active': openMenu}")
+      div.top-menu__item: a(href="#") Books
+      router-link.top-menu__item(active-class="top-menu__item--active", tag="div", to="/bar")
+        a Go to Bar
+      //dropdown error не работает
+        div(slot="header").top-menu__item: a Books2
+        a(slot="item") Настройки
+        a(slot="item") Настройки
+        a(slot="item") Настройки
+      div.top-menu__item: a(href="#") Books
+      router-link.top-menu__item(active-class="top-menu__item--active", tag="div", to="/books")
+        a Go to Books

@@ -1,0 +1,38 @@
+<div @mouseleave="open1 = false"
+     class="top-menu__search"
+     :class="{'top-menu__search--active': searchToggler}">
+  <div class="input">
+    <input @mouseover="open1 = true"
+           type="search" title="search"
+           placeholder="Search Book"
+           v-model="selection"
+           ref="search"
+           @keydown.enter='enter'
+           @keyup.esc = 'esc'
+           @keydown.down = 'down'
+           @keydown.up = 'up'
+           @blur = 'focusLeave'
+           @focus = 'onFocus'
+           @input = 'change'>
+    <div class="input__title" :style="{'display': dspl}" @click="inputFocus">
+      <div class="input__titleVal">{{selection}}</div>
+      <div class="input__titleText">
+        <div class="input__titleData">{{city}}</div>
+      </div>
+    </div>
+  </div>
+  <ul class="top-menu__search-types" :class="{'top-menu__search-types--active': openSuggestion}">
+    <li class="top-menu__search-type top-menu__search-type--active">Книга</li>
+    <li class="top-menu__search-type">Автор</li>
+    <li class="top-menu__search-type">ISBN</li>
+    <li class="top-menu__search-type">ASIN</li>
+    <li class="top-menu__search-type">Пользователь</li>
+    <!--<li class="top-menu__search-type">{{json}}</li>-->
+    <!--<li class="top-menu__search-type"-->
+        <!--v-for="(suggestion, index) in matches"-->
+        <!--:class="{'top-menu__search-type&#45;&#45;active': isActive(index)}"-->
+        <!--@click="suggestionClick(index)">-->
+      <!--<span style="padding: 0 4px;">{{ suggestion.Id }}</span> <span style="padding: 0 4px;">{{ suggestion.City }}</span>-->
+    <!--</li>-->
+  </ul>
+</div>

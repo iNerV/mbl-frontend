@@ -1,0 +1,25 @@
+div.add-form
+  div.add-form__bbcode
+    icon(name="format_bold", size=18)
+    icon(name="format_italic", size=18)
+    icon(name="format_underlined", size=18)
+    icon(name="strikethrough_s", size=18)
+    icon(name="insert_link", size=18)
+    icon(name="insert_photo", size=18)
+    icon(name="format_quote", size=18)
+    icon(name="warning", size=18)
+    icon(name="file_upload", size=18)
+    icon(name="face", size=18)
+  div.add-form__type
+    my-label(type="success", disable) success
+    my-label(type="info", disable) info
+    my-label(type="offtop", disable) offtop
+    my-label(type="warning", disable) warning
+    my-label(type="danger", disable) danger
+  textarea.add-form__text
+  div.add-form__footer
+    btn(text="Ответить", color="dark")
+    |
+    |
+    btn(text="Предпросмотр", color="dark")
+    a.add-form__help справка по бб-кодам
