@@ -1,2 +1,2 @@
 # MBL-frontend
-frontend for MyBookList..
+frontend for MyBookList.
